@@ -1,0 +1,43 @@
+---
+type: concept
+title: 三角不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: ["数学手册", "代数", "不等式", "绝对值"]
+related: ["不等式", "闵可夫斯基不等式", "柯西-施瓦茨不等式"]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+---
+# 三角不等式
+
+三角不等式断言：若干个数之和的绝对值不超过这些数的绝对值之和。《数学手册(原书第10版)》在 1.4.2 以三个相邻小节陈述它：实数形式（1.4.2.1，式 1.104–1.105）、复数形式（1.4.2.2，式 1.106–1.107）与成对的“差的绝对值不等式”（1.4.2.3，式 1.108a/b，通称反向三角不等式）。
+
+## 实数形式
+
+对任意实数 $a, b$ 及 $a_1, a_2, \cdots, a_n \in \mathbb{R}$：
+
+$$\lvert a+b\rvert \le \lvert a\rvert + \lvert b\rvert \tag{1.104}$$
+
+$$\lvert a_1 + a_2 + \dots + a_n\rvert \le \lvert a_1\rvert + \lvert a_2\rvert + \dots + \lvert a_n\rvert \tag{1.105}$$
+
+**等号条件**：当且仅当被加数的符号相同时等式成立。
+
+## 复数形式
+
+对 $z_1, z_2, \cdots, z_n \in \mathbb{C}$ 有同样估计：
+
+$$\lvert z_1 + z_2\rvert \le \lvert z_1\rvert + \lvert z_2\rvert \tag{1.106}$$
+
+$$\lvert z_1 + z_2 + \dots + z_n\rvert \le \lvert z_1\rvert + \lvert z_2\rvert + \dots + \lvert z_n\rvert \tag{1.107}$$
+
+## 反向三角不等式
+
+对任意实数 $a, b$：
+
+$$\left\lvert \lvert a\rvert - \lvert b\rvert \right\rvert \le \lvert a-b\rvert \le \lvert a\rvert + \lvert b\rvert \tag{1.108a}$$
+
+即两数之差的绝对值小于等于其绝对值之和、大于等于其绝对值之差的绝对值；复数情形 (1.108b) 同形。
+
+## 备注
+
+- 等号条件（被加数同号）为三角不等式特有，不得移植到其他命名不等式。
+- 复数形式的证明工具 $\lvert z\rvert^2 = z^* z$ 与 [[concepts/柯西-施瓦茨不等式]] 的复数形式 (1.115) 所用相同。

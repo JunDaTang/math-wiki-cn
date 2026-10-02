@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "change_1790692676214_0497ef79b22c",
+      "projectId": "f47d0753-df86-48ba-b955-cdecde3e510c",
+      "path": "wiki/queries/式2-249底数a与k等于cotα是否自洽.md",
+      "kind": "created",
+      "status": "pending",
+      "hashBefore": null,
+      "hashAfter": "986fa231b13d6feec38c2143b964aa18",
+      "size": 1712,
+      "mtimeMs": 1790692666728,
+      "createdAt": 1790692676214,
+      "updatedAt": 1790692676214,
+      "retryCount": 0,
+      "error": null,
+      "needsRerun": false
+    },
+    {
+      "id": "change_1790692676214_8b32dbc3d286",
+      "projectId": "f47d0753-df86-48ba-b955-cdecde3e510c",
+      "path": "wiki/sources/10-数学手册原书第10版--6-214-螺线--t7oiod.md",
+      "kind": "created",
+      "status": "pending",
+      "hashBefore": null,
+      "hashAfter": "e0351aec7fc8372158b312c39715eaf3",
+      "size": 9761,
+      "mtimeMs": 1790692667538,
+      "createdAt": 1790692676214,
+      "updatedAt": 1790692676214,
+      "retryCount": 0,
+      "error": null,
+      "needsRerun": false
+    }
+  ]
+}

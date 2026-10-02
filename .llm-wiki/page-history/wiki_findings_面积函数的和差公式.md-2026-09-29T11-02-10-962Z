@@ -1,0 +1,32 @@
+---
+type: finding
+title: 面积函数的和差公式（式 2.219–2.221）
+tags: [面积函数, 和差公式, 恒等式]
+related: [面积函数, 面积正弦函数, 面积余弦函数, 面积正切函数, 反三角函数]
+created: 2026-09-29
+updated: 2026-09-29
+source: "[[sources/10-数学手册原书第10版--8-210-面积函数--1cebibi]]"
+confidence: high
+replicated: true
+sources: ["数学手册(原书第10版)/2.10 面积函数.md"]
+---
+
+# 面积函数的和差公式（式 2.219–2.221）
+
+**发现**：手册给出三条和差公式：
+
+$$
+\operatorname{Arsinh} x \pm \operatorname{Arsinh} y = \operatorname{Arsinh} \left(x \sqrt {1 + y ^ {2}} \pm y \sqrt {1 + x ^ {2}}\right) \tag{2.219}
+$$
+
+$$
+\operatorname{Arcosh} x \pm \operatorname{Arcosh} y = \operatorname{Arcosh} \left(x y \pm \sqrt {(x ^ {2} - 1) (y ^ {2} - 1)}\right) \tag{2.220}
+$$
+
+$$
+\operatorname{Artanh} x \pm \operatorname{Artanh} y = \operatorname{Artanh} \frac {x \pm y}{1 \pm x y} \tag{2.221}
+$$
+
+**证据强度**：式 2.219 与 2.221 强——Arsinh 为满射奇函数、Artanh 在定义域内闭包良好，均无分支问题。手册未给出 Arcoth 的和差公式。
+
+**实质缺陷（式 2.220 减法分支）**：右端 Arcosh 的值域恒为 [0, +∞)，而左端 Arcosh x − Arcosh y 在 x < y 时为负，故减法分支仅在 x ≥ y 时成立。数值反例（转写后分析验证）：x = 1, y = 2 时，左端 = Arcosh 1 − Arcosh 2 = −Arcosh 2 < 0，右端 = Arcosh(2 − √(0·3)) = Arcosh 2 > 0，符号相反。手册未给分段条件，与 2.8 节反三角函数和差公式的分段体系形成反差（见 [[comparisons/面积函数与反三角函数比较]]）。待决问题见 [[queries/式2-220减法分支是否缺少x大于等于y条件]]。

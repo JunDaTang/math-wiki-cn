@@ -1,0 +1,34 @@
+{
+  "f47fa9c5696cf9b90b794f6a978b3727a1cfeded41862c4180adc8bf129d6eff::language:chinese": {
+    "caption": "图中为平面直角坐标系，横轴标为 x、纵轴标为 y，并在原点附近标有“0”。坐标系内绘有一条椭圆曲线，椭圆右端与 x 轴交点标为 A，左端交点标为 C。椭圆上方顶点处标为 B、下方顶点处标为 D，B 与 D 之间用一条竖直虚线连接。",
+    "mimeType": "image/jpeg",
+    "model": "openai/gpt-5.2",
+    "capturedAt": "2026-09-29T00:30:39.489Z",
+    "imageHash": "f47fa9c5696cf9b90b794f6a978b3727a1cfeded41862c4180adc8bf129d6eff",
+    "outputLanguage": "Chinese"
+  },
+  "236891de58520368e3afe1de3c157028ae56e190f5365a89c8f39d4285cae292::language:chinese": {
+    "caption": "图中为坐标系，横轴标为 x、纵轴标为 y，原点处标“0”。右侧两条曲线分别标注为“y=√(ax+b)”（上支）和“y=−√(ax+b)”（下支），并在 x 轴上标出两点“A”和“A′”。图例显示实线对应“a>0”，虚线对应“a<0”，左侧可见两条虚线曲线向左延伸。",
+    "mimeType": "image/jpeg",
+    "model": "openai/gpt-5.2",
+    "capturedAt": "2026-09-29T00:30:39.562Z",
+    "imageHash": "236891de58520368e3afe1de3c157028ae56e190f5365a89c8f39d4285cae292",
+    "outputLanguage": "Chinese"
+  },
+  "187ab9ab370fcf538f0ccfea06e7d6f2dbf97511023edd2e000459fb50636d7a::language:chinese": {
+    "caption": "图中为坐标系示意图，横轴标为 x，纵轴标为 y，原点附近标有“0”。左右各有一条向外开口的粗实曲线，左侧曲线在 x 轴上有黑点并标注“C”，右侧曲线在 x 轴上有黑点并标注“A”。两条虚线呈“X”形交叉，分别作为曲线的渐近线从左上到右下、左下到右上延伸。",
+    "mimeType": "image/jpeg",
+    "model": "openai/gpt-5.2",
+    "capturedAt": "2026-09-29T00:30:39.676Z",
+    "imageHash": "187ab9ab370fcf538f0ccfea06e7d6f2dbf97511023edd2e000459fb50636d7a",
+    "outputLanguage": "Chinese"
+  },
+  "b7f081bc06ab452016c5e8f0f4760fefe46b4b4302e91a3487da3957093d6c3c::language:chinese": {
+    "caption": "图中为直角坐标系，标有坐标轴“y”“x”，原点处标“0”。有两条虚线斜线交叉成“X”形，并在交点处画有一条竖直虚线与两条实线曲线相交。上方一条开口向上的实线曲线在竖直虚线上有点标注“B”，下方一条开口向下的实线曲线在竖直虚线上有点标注“D”。",
+    "mimeType": "image/jpeg",
+    "model": "openai/gpt-5.2",
+    "capturedAt": "2026-09-29T00:30:39.697Z",
+    "imageHash": "b7f081bc06ab452016c5e8f0f4760fefe46b4b4302e91a3487da3957093d6c3c",
+    "outputLanguage": "Chinese"
+  }
+}

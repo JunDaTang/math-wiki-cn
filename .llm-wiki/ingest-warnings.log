@@ -1,0 +1,114 @@
+## 2026-09-28T19:18:34.853Z | 数学手册(原书第10版)/1.1.3 和与积.md
+
+1. FILE block "wiki/comparisons/求和法则与求积法则对比.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-28T19:31:28.440Z | 数学手册(原书第10版)/1.1.7 有理式.md
+
+1. FILE block "wiki/concepts/部分分式分解.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-28T19:45:09.993Z | 数学手册(原书第10版)/1.1.5 代数式.md
+
+1. FILE block "wiki/comparisons/代数式分类比较.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-28T20:37:36.974Z | 数学手册(原书第10版)/1.2 有限级数.md
+
+1. FILE block "wiki/concepts/幂和公式.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-28T21:28:22.149Z | 数学手册(原书第10版)/2.2 初等函数.md
+
+1. FILE block "wiki/concepts/初等函数.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-29T09:43:24.397Z | 数学手册(原书第10版)/2.7 三角函数(角函数).md
+
+1. FILE block "wiki/findings/和差化积与积化和差公式组.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-29T11:43:32.829Z | 数学手册(原书第10版)/2.11 三阶(三次)曲线.md
+
+1. Deterministic index update failed: Failed to write file 'E:/ai-workspace/math-wiki-cn/wiki/index.md': 请求的操作无法在使用用户映射区域打开的文件上执行。 (os error 1224)
+
+## 2026-09-29T12:03:15.204Z | 数学手册(原书第10版)/2.11 三阶(三次)曲线.md
+
+1. FILE block "wiki/queries/式2-225a显式方程是否仅覆盖上半支.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-29T22:37:56.256Z | 数学手册(原书第10版)/5.3.2 半群.md
+
+1. FILE block "wiki/queries/5-3节题脱落与文件切分重复问题.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-29T23:42:08.125Z | 数学手册(原书第10版)/5.3.7 环和域.md
+
+1. FILE block "wiki/concepts/分圆域.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-30T03:01:44.616Z | 数学手册(原书第10版)/5.8.2 无向图的遍历.md
+
+1. FILE block "wiki/concepts/边序列与路.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-30T08:31:05.274Z | 数学手册(原书第10版)/7.1 数列.md
+
+1. FILE block "wiki/findings/式7-2至7-3单调数列定义与分类复算.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-30T10:44:47.952Z | 数学手册(原书第10版)/8.2.3 广义积分、斯蒂尔切斯积分与勒贝格积分.md
+
+1. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+
+## 2026-09-30T14:10:37.974Z | 数学手册(原书第10版)/9.2.1 一阶偏微分方程.md
+
+1. FILE block "wiki/findings/式9-71至9-75线性偏微分方程特征理论转录复算.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-09-30T23:17:47.042Z | 数学手册(原书第10版)/14.1.3 共形映射.md
+
+1. FILE block "wiki/entities/第一类椭圆积分.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T00:17:35.821Z | 数学手册(原书第10版)/14.1.3 共形映射.md
+
+1. FILE block "wiki/queries/式14-20外角记号疑为π.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T02:18:31.911Z | 数学手册(原书第10版)/15.3 傅里叶变换.md
+
+1. FILE block "wiki/findings/式15-69至15-77傅里叶变换定义存在性与变体转录复算.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T02:32:13.430Z | 数学手册(原书第10版)/15.4 Z变换.md
+
+1. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+2. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+3. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+
+## 2026-10-01T08:46:09.051Z | 数学手册(原书第10版)/17.2.7 由时间序列重新构造的动力系统.md
+
+1. FILE block "wiki/queries/普遍集定义式脱文之辨.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T11:45:36.813Z | 数学手册(原书第10版)/18.2.7 不等式类型约束下问题的梯度法.md
+
+1. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+
+## 2026-10-01T14:38:47.131Z | 数学手册(原书第10版)/19.6.3 切比雪夫逼近.md
+
+1. FILE block "wiki/sources/10-数学手册原书第10版--11-1963-切比雪夫逼近--1q1kpt9.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T14:45:55.289Z | 数学手册(原书第10版)/19.6.4 调和分析.md
+
+1. FILE block "wiki/concepts/离散傅里叶变换.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T15:03:45.293Z | 数学手册(原书第10版)/19.7 曲线和曲面用样条表示.md
+
+1. Dropped "wiki/methodology/三次插值样条系数确定四步流程.md" — Pages under "wiki/methodology/" must use type "methodology", but found "method".
+2. Dropped "wiki/methodology/张量积降维求解二维插值流程.md" — Pages under "wiki/methodology/" must use type "methodology", but found "method".
+
+## 2026-10-01T15:12:15.986Z | 数学手册(原书第10版)/19.6.3 切比雪夫逼近.md
+
+1. Dropped "wiki/methodology/列梅兹算法迭代流程.md" — Pages under "wiki/methodology/" must use type "methodology", but found "method".
+
+## 2026-10-01T15:28:47.631Z | 数学手册(原书第10版)/19.8.1 内符号表示.md
+
+1. Deterministic index update failed: Failed to write file 'E:/ai-workspace/math-wiki-cn/wiki/index.md': 请求的操作无法在使用用户映射区域打开的文件上执行。 (os error 1224)
+
+## 2026-10-01T17:54:29.311Z | 数学手册(原书第10版)/20.3 Mathematica的重要应用.md
+
+1. FILE block "wiki/concepts/Integrate积分命令.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.
+
+## 2026-10-01T20:26:49.042Z | 数学手册(原书第10版)/21.7.2 无理函数积分.md
+
+1. Auto-routed page type "concept" from "wiki/methodology/" to "wiki/concepts/".
+
+## 2026-10-02T05:43:32.796Z | 数学手册(原书第10版)/images/0efe40ec3c0124a4b9200fc7a3a935a3daf04c06dba1bdc5ff2d393d02ec0e50.jpg
+
+1. FILE block "wiki/findings/images-64锚位哈希资产增至二十二枚.md" was not closed before end of stream — likely truncation (model hit max_tokens, timeout, or connection dropped). Block dropped.

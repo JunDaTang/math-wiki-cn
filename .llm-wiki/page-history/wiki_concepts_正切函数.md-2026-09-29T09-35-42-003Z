@@ -1,0 +1,30 @@
+---
+type: concept
+title: 正切函数
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 三角函数, 渐近线]
+related: [三角函数, 余切函数, 正割函数, 渐近线, 无穷间断点, 拐点]
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+---
+
+# 正切函数
+
+正切函数是六个基本三角函数之一，$y=\tan x$（式 2.68），由商关系 $\tan\alpha=\frac{\sin\alpha}{\cos\alpha}$（式 2.88）定义，周期 $T=\pi$。
+
+## 图像要素
+
+- **渐近线**：$x=\left(k+\frac{1}{2}\right)\pi$（$k=0,\pm1,\pm2,\cdots$），即 $\cos x$ 的零点处，为无穷间断点/极点。
+- **单调性**：在区间 $\left(-\frac{\pi}{2}+k\pi,+\frac{\pi}{2}+k\pi\right)$ 内单调递增，取值由 $-\infty$ 到 $+\infty$（无界）。
+- **与 x 轴交点**：$A_k=(k\pi,0)$，均为拐点，此处切线倾斜角为 $\frac{\pi}{4}$。
+- **极值点**：无。
+
+## 与其他函数的关系
+
+- $\cot x=-\tan\left(x+\frac{\pi}{2}\right)$（式 2.69，[[concepts/余切函数]]）。
+- $\sec^2\alpha-\tan^2\alpha=1$（式 2.83）。
+- $\tan\alpha\cdot\cot\alpha=1$（式 2.87）。
+
+## 相关页面
+
+[[findings/正切与余切的周期渐近线单调性与拐点]]、[[comparisons/正切与余切比较]]、[[comparisons/六种三角函数性质比较]]。

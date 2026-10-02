@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sourceIdentity": "数学手册(原书第10版)/2.11 三阶(三次)曲线.md",
+  "sourceFingerprint": "24d69fa97abd79e4",
+  "completedPaths": [
+    "wiki/sources/10-数学手册原书第10版--10-211-三阶三次曲线--nch2ec.md",
+    "wiki/entities/数学手册原书第10版.md",
+    "wiki/concepts/代数曲线.md",
+    "wiki/concepts/二分之三次抛物线.md",
+    "wiki/concepts/阿涅西箕舌线.md",
+    "wiki/concepts/洛伦兹曲线.md",
+    "wiki/concepts/笛卡儿叶形线.md",
+    "wiki/concepts/蔓叶线.md",
+    "wiki/concepts/环索线.md",
+    "wiki/concepts/曲线奇点.md",
+    "wiki/findings/代数曲线的阶的定义与阶数实例.md",
+    "wiki/findings/二分之三次抛物线的尖点曲率与弧长.md",
+    "wiki/findings/阿涅西箕舌线的要素及与洛伦兹曲线的关系.md",
+    "wiki/findings/笛卡儿叶形线的二重点渐近线与面积.md",
+    "wiki/findings/蔓叶线的三形式方程与轨迹定义.md",
+    "wiki/findings/环索线的二重点渐近线与环部面积.md",
+    "wiki/log.md"
+  ],
+  "updatedAt": 1790683395592
+}

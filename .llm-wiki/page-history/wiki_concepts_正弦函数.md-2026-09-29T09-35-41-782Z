@@ -1,0 +1,39 @@
+---
+type: concept
+title: 正弦函数
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 三角函数, 周期函数]
+related: [三角函数, 余弦函数, 余割函数, 正弦量与谐振荡, 阻尼振荡, 周期函数, 拐点, 极值]
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+---
+
+# 正弦函数
+
+正弦函数是六个基本三角函数之一，标准形式为 $y=\sin x$（式 2.63），是周期 $T=2\pi$ 的连续曲线；一般形式 $y=A\sin(\omega x+\varphi_0)$（式 2.64）以振幅 $\lvert A\rvert$、频率 $\omega$、相位移 $\varphi_0$ 参数化，是描述振动的基本载体（[[concepts/正弦量与谐振荡]]）。
+
+## 标准正弦（式 2.63）
+
+- 周期 $2\pi$，值域 $-1\le y\le 1$。
+- 与 x 轴交点 $B_k=(k\pi,0)$（$k=0,\pm1,\pm2,\cdots$），均为拐点，此处切线关于 x 轴的倾斜角为 $\pm\frac{\pi}{4}$。
+- 极值点 $C_k=\left(\left(k+\frac{1}{2}\right)\pi,(-1)^k\right)$。
+
+## 一般正弦（式 2.64）
+
+- 振幅 $\lvert A\rvert$，周期 $T=\frac{2\pi}{\omega}$，相位移 $\varphi_0$。
+- 与 x 轴交点 $B_k=\left(\frac{k\pi-\varphi_0}{\omega},0\right)$；极值点 $C_k=\left(\frac{\left(k+\frac{1}{2}\right)\pi-\varphi_0}{\omega},(-1)^kA\right)$。
+- 变换链：由标准正弦沿 y 方向拉伸 $\lvert A\rvert$ 倍、沿 x 方向压缩 $\frac{1}{\omega}$ 倍、再向左平移 $\frac{\varphi_0}{\omega}$ 个单位得到。
+
+## 与其他函数的关系
+
+- $\cos x=\sin\left(x+\frac{\pi}{2}\right)$：余弦是相位前移的正弦（[[concepts/余弦函数]]）。
+- $\csc x=\frac{1}{\sin x}$：正弦的倒数（[[concepts/余割函数]]）。
+- $\frac{\sin\alpha}{\cos\alpha}=\tan\alpha$（式 2.88）。
+
+## 术语注记
+
+手册称 $\omega$ 为「频率」，但由 $T=\frac{2\pi}{\omega}$ 可知 $\omega$ 实为角频率；手册自注其在波动理论中称为角频率或径向频率（见 [[queries/手册称ω为频率是否应为角频率]]）。
+
+## 相关页面
+
+[[findings/标准与一般正弦曲线的周期交点与极值点公式]]、[[comparisons/正弦与余弦比较]]、[[comparisons/六种三角函数性质比较]]、[[methodology/三角函数图像绘制法]]。

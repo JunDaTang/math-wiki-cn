@@ -1,0 +1,337 @@
+---
+type: source
+title: 数学手册(原书第10版) 2.7 三角函数(角函数)
+created: 2026-09-29
+updated: 2026-09-29
+tags: ["数学手册", "三角函数", "三角恒等式", "振动", "阻尼振荡", "参考工具书", "函数图像"]
+related: ["数学手册原书第10版", "三角函数", "正弦函数", "余弦函数", "正切函数", "余切函数", "正割函数", "余割函数", "诱导公式", "同角三角函数的基本关系", "加法定理", "倍角公式", "半角公式", "和差化积与积化和差", "三角函数的幂", "谐振荡", "向量图", "阻尼振荡", "象限关系与简化公式", "三角恒等式", "棣莫弗公式", "正弦量与谐振荡", "三角函数图像绘制法"]
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+authors: []
+url: ""
+venue: "《数学手册(原书第10版)》第 2 章 2.7 节"
+---
+
+# 数学手册(原书第10版) 2.7 三角函数(角函数)
+
+## 概述
+
+本页是《数学手册(原书第10版)》第 2.7 节「三角函数(角函数)」的摘要页，是该节全部内容的一手出处，承载式 (2.63)–(2.139) 与表 2.1–2.5。手册指出三角函数是从几何角度引入的，其定义及自变量采用角度或弧度制（原书第 170 页 3.1.1.5）。全节分三部分：
+
+1. **2.7.1 基本概念**：六个三角函数的定义（式 2.63–2.71）、值域与四象限符号（表 2.1–2.2）、特殊角值（表 2.3）、任意角化归（式 2.72–2.81、表 2.4）；
+2. **2.7.2 三角函数的重要公式**：同角关系至降幂的恒等式族（式 2.82–2.135、表 2.5）；
+3. **2.7.3 振动的描述**：正弦量与谐振荡、振动的叠加、向量图、振荡的阻尼（式 2.136–2.139）。
+
+本节延续手册 2.3–2.6 的「定义—特征点—变换—图像」分析传统，方法学总结见 [[methodology/三角函数图像绘制法]]（与 [[methodology/多项式图像绘制法]]、[[methodology/有理函数图像绘制法]]、[[methodology/指数对数类函数图像绘制法]] 并列）。
+
+## 2.7.1 基本概念
+
+### 六个函数的定义（式 2.63–2.71）
+
+```latex
+y = \sin x                                             (2.63)
+y = A\sin(\omega x + \varphi_0)                        (2.64)
+y = \cos x = \sin(x + \pi/2)                           (2.65)
+y = A\cos(\omega x + \varphi_0)                        (2.66)
+y = A\sin(\omega x + \varphi_0 + \pi/2)                (2.67)
+y = \tan x                                             (2.68)
+y = \cot x = -\tan(x + \pi/2)                          (2.69)
+y = \sec x = 1/\cos x                                  (2.70)
+y = \csc x = 1/\sin x                                  (2.71)
+```
+
+概念页：[[concepts/三角函数]]（总纲）、[[concepts/正弦函数]]、[[concepts/余弦函数]]、[[concepts/正切函数]]、[[concepts/余切函数]]、[[concepts/正割函数]]、[[concepts/余割函数]]。
+
+![图 2.32(a) 标准正弦函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/001-356da2d49eae1480fa4526ec47476797a63496da65b0eb66103763d3fd6af1b0.jpg)
+
+![图 2.32(b) 一般正弦函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/002-8b5c018693df44f9cfaa89abf14571b8898ab01b670587bfa44e582e393a3e99.jpg)
+
+![图 2.33 余弦函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/003-62d99c90f6db0e26ea6feb50df76f7e6a64a8a7bd2ad5c62d43f5dbb854b6bc0.jpg)
+
+![图 2.34 正切函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/004-07a61cadd48235197afe3da39473ecb51a764a548c6ebb886b76497af52f8cea.jpg)
+
+![图 2.35 余切函数（源文图题错位插入式 2.70 处）](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/005-799771d2b96901a76c9d9b6911ef26cc677fe9aefe4c37e5dafe36d7a73d32bb.jpg)
+
+![图 2.36 正割函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/006-9958027ef27a4748d5c8878aa7e887538a23c6b8e59de72e4c00582b354cf54d.jpg)
+
+![图 2.37 余割函数](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/007-a8e56666a5aaa3b78da93f9fd3a51caa5ae0ad5ce4de09caef5c17033f3bf6e7.jpg)
+
+### 图像要素总表（$k = 0, \pm1, \pm2, \cdots$）
+
+| 函数（式号） | 周期 | 渐近线 | 与 x 轴交点 | 极值点 | 值域 / 单调性 |
+|---|---|---|---|---|---|
+| $\sin x$（2.63） | $2\pi$ | — | $B_k=(k\pi,0)$，兼拐点，切线倾角 $\pm\frac{\pi}{4}$ | $C_k=\left(\left(k+\frac{1}{2}\right)\pi,(-1)^k\right)$ | $-1\le y\le 1$ |
+| $A\sin(\omega x+\varphi_0)$（2.64） | $\frac{2\pi}{\omega}$ | — | $B_k=\left(\frac{k\pi-\varphi_0}{\omega},0\right)$ | $C_k=\left(\frac{(k+\frac{1}{2})\pi-\varphi_0}{\omega},(-1)^kA\right)$ | 振幅 $\lvert A\rvert$ |
+| $\cos x$（2.65） | $2\pi$ | — | $B_k=\left(\left(k+\frac{1}{2}\right)\pi,0\right)$，兼拐点，$\pm\frac{\pi}{4}$ | $C_k=(k\pi,(-1)^k)$ | $-1\le y\le 1$ |
+| $\tan x$（2.68） | $\pi$ | $x=\left(k+\frac{1}{2}\right)\pi$ | $A_k=(k\pi,0)$，兼拐点，$\frac{\pi}{4}$ | 无 | $\mathbb{R}$，各支递增 |
+| $\cot x$（2.69） | $\pi$ | $x=k\pi$ | $A_k=\left(\left(k+\frac{1}{2}\right)\pi,0\right)$，兼拐点，$-\frac{\pi}{4}$ | 无 | $\mathbb{R}$，$(0,\pi)$ 内递减 |
+| $\sec x$（2.70） | $2\pi$ | $x=\left(k+\frac{1}{2}\right)\pi$ | 无（$\lvert y\rvert\ge 1$） | 局部极大 $A_k=((2k+1)\pi,-1)$；局部极小 $B_k=(2k\pi,+1)$ | $\lvert y\rvert\ge 1$ |
+| $\csc x$（2.71） | $2\pi$ | $x=k\pi$ | 无 | 局部极大 $A_k=\left(\frac{4k+3}{2}\pi,-1\right)$；局部极小 $B_k=\left(\frac{4k+1}{2}\pi,+1\right)$ | $\lvert y\rvert\ge 1$ |
+
+对应发现页：[[findings/标准与一般正弦曲线的周期交点与极值点公式]]、[[findings/余弦作为相位平移正弦及其特征点]]、[[findings/正切与余切的周期渐近线单调性与拐点]]、[[findings/正割与余割的局部极值点与平移关系]]。
+
+### 函数间的变换关系链
+
+- 一般正弦 ← 标准正弦：沿 y 方向拉伸 $\lvert A\rvert$ 倍、沿 x 方向压缩 $\frac{1}{\omega}$ 倍、再向左平移 $\frac{\varphi_0}{\omega}$ 个单位。
+- $\cos x=\sin\left(x+\frac{\pi}{2}\right)$：余弦是相位前移 $\frac{\pi}{2}$ 的正弦。
+- $\cot x=-\tan\left(x+\frac{\pi}{2}\right)$：正切曲线沿 x 轴反射并向左平移 $\frac{\pi}{2}$ 个单位（已代数验证）。
+- $\csc$ 的图像由 $\sec$ 向右平移 $\frac{\pi}{2}$ 个单位得到（$\csc x=\sec\left(x-\frac{\pi}{2}\right)$，已验证；源文作「向右平移 $x=\frac{\pi}{2}$ 个单位」，「x=」疑为转写残留）。
+- 一般余弦 (2.66) 化为 (2.67)，手册称「由一般正弦函数向左平移 $\varphi=\frac{\pi}{2}$ 个单位」——口径含混，见 [[queries/一般余弦左移量是否应为π除以2ω]]。
+
+### 值域与象限符号（表 2.1–2.2）
+
+表 2.1 三角函数的定义域和值域（转写疑不完整，整理如下）：
+
+| 函数 | 定义域 | 值域 |
+|---|---|---|
+| $\sin x$ | $-\infty < x < \infty$ | $-1 \le \sin x \le 1$ |
+| $\cos x$ | $-\infty < x < \infty$ | $-1 \le \cos x \le 1$ |
+| $\tan x$ | $x \ne (2k+1)\frac{\pi}{2}$（$k=0,\pm1,\pm2,\cdots$） | $-\infty < \tan x < \infty$ |
+| $\cot x$ | $x \ne k\pi$（$k=0,\pm1,\pm2,\cdots$） | $-\infty < \cot x < \infty$ |
+
+注：源文表格仅含以上四项且单元格结构错乱，而正文式 2.70–2.71 与表 2.2、表 2.3 均覆盖六个函数，sec/csc 行疑似丢失（→ [[queries/表2-1是否遗漏正割与余割的定义域与值域]]）。按正文可补：$\sec x$ 定义域 $x\ne\left(k+\frac{1}{2}\right)\pi$、值域 $\lvert y\rvert\ge1$；$\csc x$ 定义域 $x\ne k\pi$、值域 $\lvert y\rvert\ge1$。
+
+表 2.2 三角函数的符号（逐字保留）：
+
+| 象限 | 角 | sin | cos | tan | cot | sec | csc |
+|---|---|---|---|---|---|---|---|
+| I | $0^\circ < \alpha < 90^\circ$ | + | + | + | + | + | + |
+| II | $90^\circ < \alpha < 180^\circ$ | + | − | − | − | − | + |
+| III | $180^\circ < \alpha < 270^\circ$ | − | − | + | + | − | − |
+| IV | $270^\circ < \alpha < 360^\circ$ | − | + | − | − | + | − |
+
+![图 2.38 六个三角函数在四个象限](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/008-f29c7566d15960b96fd669c2ca25efd5a33c03daa20067329ebd0350820a64c3.jpg)
+
+### 特殊角值（表 2.3，逐字保留）
+
+| 角度 | 弧度 | sin | cos | tan | cot | sec | csc |
+|---|---|---|---|---|---|---|---|
+| $0^\circ$ | 0 | 0 | 1 | 0 | $\mp\infty$ | 1 | $\mp\infty$ |
+| $30^\circ$ | $\frac{1}{6}\pi$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{3}}{3}$ | $\sqrt{3}$ | $\frac{2\sqrt{3}}{3}$ | 2 |
+| $45^\circ$ | $\frac{1}{4}\pi$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ | 1 | 1 | $\sqrt{2}$ | $\sqrt{2}$ |
+| $60^\circ$ | $\frac{1}{3}\pi$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ | $\sqrt{3}$ | $\frac{\sqrt{3}}{3}$ | 2 | $\frac{2\sqrt{3}}{3}$ |
+| $90^\circ$ | $\frac{1}{2}\pi$ | 1 | 0 | $\pm\infty$ | 0 | $\pm\infty$ | 1 |
+
+注：$\pm/\mp$ 按左极限、右极限顺序取号（如 $\tan$ 在 $90^\circ$ 处左极限 $+\infty$、右极限 $-\infty$，记 $\pm\infty$），与 [[concepts/函数的极限]] 的单侧口径一致。
+
+### 任意角的化归（式 2.72–2.81、表 2.4）
+
+详见 [[concepts/象限关系与简化公式]] 与 [[findings/任意角化归与象限关系公式及算例]]。
+
+```latex
+% 周期化简（n 为整数）
+\sin(360°·n + α) = sin α                    (2.72)
+\cos(360°·n + α) = cos α                    (2.73)
+\tan(180°·n + α) = tan α                    (2.74)
+\cot(180°·n + α) = cot α                    (2.75)
+% 负角
+\sin(-α) = -sin α                           (2.76)
+\cos(-α) = cos α                            (2.77)
+\tan(-α) = -tan α                           (2.78)
+\cot(-α) = -cot α                           (2.79)
+% 余角公式（x = 90° - α，参见原书第 168 页 3.1.1.2）
+\cos α = sin x = sin(90° - α)               (2.80a)
+\sin α = cos x = cos(90° - α)               (2.80b)
+% 补角公式（α + x = 180°）
+\sin α = sin x = sin(180° - α)              (2.81a)
+-\cos α = cos x = cos(180° - α)             (2.81b)
+```
+
+表 2.4 三角函数的简化公式与象限关系（逐字保留）：
+
+| 函数 | $x=90^\circ\pm\alpha$ | $x=180^\circ\pm\alpha$ | $x=270^\circ\pm\alpha$ | $x=360^\circ-\alpha$ |
+|---|---|---|---|---|
+| $\sin x$ | $+\cos\alpha$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $-\sin\alpha$ |
+| $\cos x$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $\pm\sin\alpha$ | $+\cos\alpha$ |
+| $\tan x$ | $\mp\cot\alpha$ | $\pm\tan\alpha$ | $\mp\cot\alpha$ | $-\tan\alpha$ |
+| $\cot x$ | $\mp\tan\alpha$ | $\pm\cot\alpha$ | $\mp\tan\alpha$ | $-\cot\alpha$ |
+
+算例（已独立复算）：
+
+$$\sin(-1000^\circ) = -\sin 1000^\circ = -\sin(360^\circ\cdot 2 + 280^\circ) = -\sin 280^\circ = +\cos 10^\circ = +0.9848.$$
+
+## 2.7.2 三角函数的重要公式（式 2.82–2.135）
+
+详见 [[concepts/三角恒等式]] 与 [[findings/同角关系至降幂的恒等式公式族]]。各族公式逐字保留如下。
+
+```latex
+% 同角关系 (2.82–2.89)
+\sin^2 α + \cos^2 α = 1                     (2.82)
+\sec^2 α - \tan^2 α = 1                     (2.83)
+\csc^2 α - \cot^2 α = 1                     (2.84)
+\sin α · \csc α = 1                         (2.85)
+\cos α · \sec α = 1                         (2.86)
+\tan α · \cot α = 1                         (2.87)
+\sin α / \cos α = \tan α                    (2.88)
+\cos α / \sin α = \cot α                    (2.89)
+```
+
+```latex
+% 加法定理 (2.90–2.95)
+\sin(α ± β) = \sin α\cos β ± \cos α\sin β                     (2.90)
+\cos(α ± β) = \cos α\cos β ∓ \sin α\sin β                     (2.91)
+\tan(α ± β) = (\tan α ± \tan β)/(1 ∓ \tan α\tan β)           (2.92)
+\cot(α ± β) = (\cot α\cot β ∓ 1)/(\cot β ± \cot α)           (2.93)
+\sin(α+β+γ) = \sin α\cos β\cos γ + \cos α\sin β\cos γ
+             + \cos α\cos β\sin γ - \sin α\sin β\sin γ         (2.94)
+\cos(α+β+γ) = \cos α\cos β\cos γ - \sin α\sin β\cos γ
+             - \sin α\cos β\sin γ - \cos α\sin β\sin γ         (2.95)
+```
+
+```latex
+% 倍角 (2.96–2.107)
+\sin 2α = 2\sin α\cos α                                       (2.96)
+\sin 3α = 3\sin α - 4\sin^3 α                                 (2.97)
+\cos 2α = \cos^2 α - \sin^2 α                                 (2.98)
+\cos 3α = 4\cos^3 α - 3\cos α                                 (2.99)
+\sin 4α = 8\cos^3 α\sin α - 4\cos α\sin α                     (2.100)
+\cos 4α = 8\cos^4 α - 8\cos^2 α + 1                           (2.101)
+\tan 2α = 2\tan α/(1 - \tan^2 α)                              (2.102)
+\tan 3α = (3\tan α - \tan^3 α)/(1 - 3\tan^2 α)                (2.103)
+\tan 4α = (4\tan α - 4\tan^3 α)/(1 - 6\tan^2 α + \tan^4 α)    (2.104)
+\cot 2α = (\cot^2 α - 1)/(2\cot α)                            (2.105)
+\cot 3α = (\cot^3 α - 3\cot α)/(3\cot^2 α - 1)                (2.106)
+\cot 4α = (\cot^4 α - 6\cot^2 α + 1)/(4\cot^3 α - 4\cot α)    (2.107)
+```
+
+```latex
+% 棣莫弗–二项式通式 (2.108–2.109)；编号 (2.110) 在源文中空缺
+\cos nα + i\sin nα
+  = \sum_{k=0}^{n} \binom{n}{k} i^k \cos^{n-k} α \sin^{k} α
+  = (\cos α + i\sin α)^n
+  = \cos^n α + i n\cos^{n-1} α\sin α - \binom{n}{2}\cos^{n-2} α\sin^2 α
+    - i\binom{n}{3}\cos^{n-3} α\sin^3 α + \binom{n}{4}\cos^{n-4} α\sin^4 α + ⋯   (2.108)
+
+\cos nα = \cos^n α - \binom{n}{2}\cos^{n-2} α\sin^2 α + \binom{n}{4}\cos^{n-4} α\sin^4 α - ⋯
+\sin nα = n\cos^{n-1} α\sin α - \binom{n}{3}\cos^{n-3} α\sin^3 α + \binom{n}{5}\cos^{n-5} α\sin^5 α - ⋯   (2.109)
+```
+
+（通式引用原书第 48 页 1.5.3.5 棣莫弗公式与第 14 页 1.1.6.4 二项式定理，见 [[concepts/棣莫弗公式]]。）
+
+```latex
+% 半角 (2.111–2.114)，平方根符号依半角所处象限确定
+\sin(α/2) = √(½(1 - \cos α))                                  (2.111)
+\cos(α/2) = √(½(1 + \cos α))                                  (2.112)
+\tan(α/2) = √((1-\cos α)/(1+\cos α)) = (1-\cos α)/\sin α = \sin α/(1+\cos α)   (2.113)
+\cot(α/2) = √((1+\cos α)/(1-\cos α)) = (1+\cos α)/\sin α = \sin α/(1-\cos α)   (2.114)
+```
+
+```latex
+% 和差化积 (2.115–2.122)
+\sin α + \sin β = 2\sin((α+β)/2)\cos((α-β)/2)                 (2.115)
+\sin α - \sin β = 2\cos((α+β)/2)\sin((α-β)/2)                 (2.116)
+\cos α + \cos β = 2\cos((α+β)/2)\cos((α-β)/2)                 (2.117)
+\cos α - \cos β = -2\sin((α+β)/2)\sin((α-β)/2)                (2.118)
+\tan α ± \tan β = \sin(α ± β)/(\cos α\cos β)                  (2.119)
+\cot α ± \cot β = ±\sin(α ± β)/(\sin α\sin β)                 (2.120)
+\tan α + \cot β = \cos(α - β)/(\cos α\sin β)                  (2.121)
+\cot α - \tan β = \cos(α + β)/(\sin α\cos β)                  (2.122)
+```
+
+```latex
+% 积化和差 (2.123–2.129)
+\sin α\sin β = ½[\cos(α-β) - \cos(α+β)]                       (2.123)
+\cos α\cos β = ½[\cos(α-β) + \cos(α+β)]                       (2.124)
+\sin α\cos β = ½[\sin(α-β) + \sin(α+β)]                       (2.125)
+\sin α\sin β\sin γ = ¼[\sin(α+β-γ) + \sin(β+γ-α)
+                      + \sin(γ+α-β) - \sin(α+β+γ)]            (2.126)
+\sin α\cos β\cos γ = ¼[\sin(α+β-γ) - \sin(β+γ-α)
+                      + \sin(γ+α-β) + \sin(α+β+γ)]            (2.127)
+\sin α\sin β\cos γ = ¼[-\cos(α+β-γ) + \cos(β+γ-α)
+                      + \cos(γ+α-β) - \cos(α+β+γ)]            (2.128)
+\cos α\cos β\cos γ = ¼[\cos(α+β-γ) + \cos(β+γ-α)
+                      + \cos(γ+α-β) + \cos(α+β+γ)]            (2.129)
+```
+
+```latex
+% 降幂 (2.130–2.135)
+\sin^2 α = ½(1 - \cos 2α)                                     (2.130)
+\cos^2 α = ½(1 + \cos 2α)                                     (2.131)
+\sin^3 α = ¼(3\sin α - \sin 3α)                               (2.132)
+\cos^3 α = ¼(\cos 3α + 3\cos α)                               (2.133)
+\sin^4 α = ⅛(\cos 4α - 4\cos 2α + 3)                          (2.134)
+\cos^4 α = ⅛(\cos 4α + 4\cos 2α + 3)                          (2.135)
+```
+
+表 2.5 当 $0<\alpha<\frac{\pi}{2}$ 时同角三角函数间的关系（逐字保留；其他区间平方根符号依象限决定）：
+
+| α | sin α | cos α | tan α | cot α |
+|---|---|---|---|---|
+| sin α | — | $\sqrt{1-\cos^2\alpha}$ | $\frac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ | $\frac{1}{\sqrt{1+\cot^2\alpha}}$ |
+| cos α | $\sqrt{1-\sin^2\alpha}$ | — | $\frac{1}{\sqrt{1+\tan^2\alpha}}$ | $\frac{\cot\alpha}{\sqrt{1+\cot^2\alpha}}$ |
+| tan α | $\frac{\sin\alpha}{\sqrt{1-\sin^2\alpha}}$ | $\frac{\sqrt{1-\cos^2\alpha}}{\cos\alpha}$ | — | $\frac{1}{\cot\alpha}$ |
+| cot α | $\frac{\sqrt{1-\sin^2\alpha}}{\sin\alpha}$ | $\frac{\cos\alpha}{\sqrt{1-\cos^2\alpha}}$ | $\frac{1}{\tan\alpha}$ | — |
+
+## 2.7.3 振动的描述（式 2.136–2.139）
+
+详见 [[concepts/正弦量与谐振荡]]、[[concepts/向量图]]、[[concepts/阻尼振荡]]。
+
+```latex
+u(t) = A\sin(\omega t + \varphi)                                                    (2.136)
+u(t) = a\sin\omega t + b\cos\omega t,\quad A = √(a²+b²),\ \tan\varphi = b/a          (2.137)
+A₁\sin(\omega t+\varphi₁) + A₂\sin(\omega t+\varphi₂) = A\sin(\omega t+\varphi)      (2.138a)
+A = √(A₁² + A₂² + 2A₁A₂\cos(\varphi₂-\varphi₁)),
+\tan\varphi = (A₁\sin\varphi₁ + A₂\sin\varphi₂)/(A₁\cos\varphi₁ + A₂\cos\varphi₂)    (2.138b)
+\sum_i c_i A_i\sin(\omega t+\varphi_i) = A\sin(\omega t+\varphi)                     (2.138c)
+u(t) = A e^{-at}\sin(\omega t + \varphi₀)\quad (a, t > 0)                            (2.139)
+```
+
+![图 2.39 一般正弦曲线（谐振荡）](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/009-5cde9cef59d1925f0b82894c043ebef302608bdc9b4fcc4c93b612d5c29b7ff9.jpg)
+
+![图 2.40 a、b、A、φ 的直角三角形表示](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/010-96c41378721f65f90af2b3f60073003413b6507a7dc8a8dc2557e8b1c63dc8af.jpg)
+
+![图 2.41(a) 向量加法确定 A 与 φ](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/011-d8bf9f505a86b8c6b165e9fa4b1f7ae6940a30a3d0d5907908232a0ce8ef69ad.jpg)
+
+![图 2.41(b) 时间轴投影读取 u](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/012-65862b1ad4898e256ae9349ae8d8ef415d2a9feec9e6bd5bc87de4c685eded4f.jpg)
+
+阻尼振荡（式 2.139）特征点（逐字保留，已符号验证）：
+
+```latex
+% 与包络 ±A·e^{-at} 的切点
+A_k = ( ((k+1/2)π - φ₀)/ω ,  (-1)^k A·exp(-a·((k+1/2)π - φ₀)/ω) )
+% 与坐标轴的交点
+B = (0, A·sin φ₀),   C_k = ( (kπ - φ₀)/ω , 0 )
+% 极值点 D_k:  t_k = (kπ - φ₀ + α)/ω
+% 拐点  E_k:  t_k = (kπ - φ₀ + 2α)/ω,   其中 tan α = ω/a
+% 对数衰减率（y_i、y_{i+1} 为两个相继极值的纵坐标）
+δ = ln|y_i / y_{i+1}| = a·π/ω
+```
+
+![图 2.42 阻尼振荡](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/013-f1758f90b170770177ca7968f4f416381f5e1edf100efedfb06d4739b60841ae.jpg)
+
+## 转写问题清单
+
+1. **式 (2.110) 空缺**：源文在 (2.109) 之后仅剩孤立编号「(2.110)」，无公式内容，疑为转写丢失或原书排版空号 → [[queries/式2-110编号空缺的公式内容是否转写丢失]]。
+2. **表 2.1 疑不完整**：仅列 sin/cos/tan/cot 四函数且单元格结构错乱，sec/csc 行疑似丢失 → [[queries/表2-1是否遗漏正割与余割的定义域与值域]]。
+3. **式 2.66–2.67 平移口径**：「向左平移 $\varphi=\frac{\pi}{2}$ 个单位」若指沿 x 轴平移应为 $\frac{\pi}{2\omega}$ → [[queries/一般余弦左移量是否应为π除以2ω]]。
+4. **向量图「绝对值」表述**：投影 $ON$「等于 $u$ 的绝对值」与同段带符号的 $u_0=A\sin\varphi$ 口径不一致 → [[queries/向量图投影ON是否应为带符号函数值而非绝对值]]。
+5. **「频率」术语**：$\omega$ 被称为「频率」，但 $T=\frac{2\pi}{\omega}$ 表明其为角频率；源文自注「在波动理论中称为角频率或径向频率」→ [[queries/手册称ω为频率是否应为角频率]]。
+6. **版面错乱**：图 2.32 的 (a)/(b) 与图题分离；图 2.35 图题插进式 (2.70) 极值点公式中间（将「$(k=$」与「$0,\pm1,\pm2,\cdots)$」截断）；图 2.41 图题错位；「向右平移 $x=\frac{\pi}{2}$ 个单位」中「x=」疑为残留 → [[queries/图2-32图2-35图2-41图题错位及式2-70被截断如何修复]]。
+
+与既有 wiki 内容无实质冲突；本节结论与 2.1.5 初等函数连续性（[[concepts/初等函数的连续性]]）一致。
+
+## 与既有 wiki 的联系
+
+- 延续第 2 章函数序列：[[sources/10-数学手册原书第10版--12-26-指数函数和对数函数--1wum3pd]]、[[sources/10-数学手册原书第10版--7-24-有理函数--1pptax7]]、[[sources/10-数学手册原书第10版--6-23-多项式--l0zhnw]] 等，沿用同一分析框架。
+- 强化既有概念：[[concepts/周期函数]]（sin/cos/sec/csc 周期 $2\pi$，tan/cot 周期 $\pi$）、[[concepts/拐点]]（sin/cos/tan/cot 拐点处切线倾角 $\pm\frac{\pi}{4}$）、[[concepts/渐近线]]、[[concepts/无穷间断点]] 与 [[concepts/极点]]（tan/cot/sec/csc 的垂直渐近线处）、[[concepts/有界函数]]（sin/cos 有界，sec/csc 无界但 $\lvert y\rvert\ge1$）、[[concepts/极值]]、[[concepts/指数函数]]（阻尼包络 $\pm A\mathrm{e}^{-at}$）。
+- 阻尼振荡是指数函数与正弦的乘积，其极值/拐点定位方法（辅助角 $\alpha$，$\tan\alpha=\frac{\omega}{a}$）与 2.6 节 [[concepts/幂函数与指数函数的乘积]] 一脉相承（wiki 推断，非源文主张）。
+- 表 2.3 的 $\mp\infty$ 单侧口径回链 [[concepts/函数的极限]] 与 [[concepts/未定式]]。
+
+<!-- llm-wiki:embedded-images -->
+## Embedded Images
+
+### Document
+
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/001-356da2d49eae1480fa4526ec47476797a63496da65b0eb66103763d3fd6af1b0.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/002-8b5c018693df44f9cfaa89abf14571b8898ab01b670587bfa44e582e393a3e99.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/003-62d99c90f6db0e26ea6feb50df76f7e6a64a8a7bd2ad5c62d43f5dbb854b6bc0.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/004-07a61cadd48235197afe3da39473ecb51a764a548c6ebb886b76497af52f8cea.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/005-799771d2b96901a76c9d9b6911ef26cc677fe9aefe4c37e5dafe36d7a73d32bb.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/006-9958027ef27a4748d5c8878aa7e887538a23c6b8e59de72e4c00582b354cf54d.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/007-a8e56666a5aaa3b78da93f9fd3a51caa5ae0ad5ce4de09caef5c17033f3bf6e7.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/008-f29c7566d15960b96fd669c2ca25efd5a33c03daa20067329ebd0350820a64c3.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/009-5cde9cef59d1925f0b82894c043ebef302608bdc9b4fcc4c93b612d5c29b7ff9.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/010-96c41378721f65f90af2b3f60073003413b6507a7dc8a8dc2557e8b1c63dc8af.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/011-d8bf9f505a86b8c6b165e9fa4b1f7ae6940a30a3d0d5907908232a0ce8ef69ad.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/012-65862b1ad4898e256ae9349ae8d8ef415d2a9feec9e6bd5bc87de4c685eded4f.jpg)
+![](../media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/013-f1758c90b170770177ca7968f4f416381f5e1edf100efedfb06d4739b60841ae.jpg)
+<!-- llm-wiki:embedded-images -->

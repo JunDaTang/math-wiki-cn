@@ -1,0 +1,42 @@
+---
+type: concept
+title: 切比雪夫不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式, 序列]
+related: [不等式, 算术平均值, 赫尔德不等式]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+---
+
+# 切比雪夫不等式
+
+切比雪夫不等式（序列/和式形式）刻画两列正实数序列的均值之积与其对应乘积之均值的大小关系，方向由两列是否同向单调决定。《数学手册(原书第10版)》1.4.2.10 给出基本形式（式 1.118a/b），1.4.2.11 给出 k 次幂均值的广义形式（式 1.119a/b）。
+
+## 基本形式（式 1.118a/b）
+
+设 $a_1,\dots,a_n$ 与 $b_1,\dots,b_n$ 是正实数。
+
+**两列同为递增或同为递减**（$a_1\leqslant\dots\leqslant a_n$ 且 $b_1\leqslant\dots\leqslant b_n$，或两列同时反向）时：
+
+$$\left(\frac{a_1+\cdots+a_n}{n}\right)\left(\frac{b_1+\cdots+b_n}{n}\right) \leqslant \frac{a_1b_1+\cdots+a_nb_n}{n} \tag{1.118a}$$
+
+**一列递增、另一列递减**（$a_1\leqslant\dots\leqslant a_n$ 且 $b_1\geqslant\dots\geqslant b_n$）时：
+
+$$\left(\frac{a_1+\cdots+a_n}{n}\right)\left(\frac{b_1+\cdots+b_n}{n}\right) \geqslant \frac{a_1b_1+\cdots+a_nb_n}{n} \tag{1.118b}$$
+
+即：两序列同向单调时，算术平均值之积不超过对应数之积的算术平均值；异向单调时反向不等式成立。
+
+## 广义形式（式 1.119a/b）
+
+将上述均值换为 k 次幂均值，排序条件与 1.118 相同；同向单调时：
+
+$$\sqrt[k]{\frac{a_1^k+\cdots+a_n^k}{n}}\;\sqrt[k]{\frac{b_1^k+\cdots+b_n^k}{n}} \leqslant \sqrt[k]{\frac{(a_1b_1)^k+\cdots+(a_nb_n)^k}{n}} \tag{1.119a}$$
+
+异向单调时不等号反向（式 1.119b）。
+
+## 前提与消歧
+
+- 前提为**正实数 + 单调排序**，二者缺一不可；这些条件不可转移到其他不等式（见 [[comparisons/特殊不等式比较]]）。手册未给等号条件。
+- **消歧注记**：本页是序列/和式的切比雪夫不等式，与概率论中对随机变量以方差给出偏离界限的同名不等式为不同对象（手册第 16 章“统计”语境可能涉及后者）。引用本页时须注意区分。
+
+出处记录见 [[findings/切比雪夫不等式及其广义形式]]。

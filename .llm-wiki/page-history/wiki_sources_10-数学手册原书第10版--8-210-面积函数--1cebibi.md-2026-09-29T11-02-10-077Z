@@ -1,0 +1,181 @@
+---
+type: source
+title: "数学手册(原书第10版) 2.10 面积函数"
+authors: []
+year: ""
+url: ""
+venue: ""
+tags: [数学手册, 初等函数, 面积函数, 反双曲函数]
+related: [数学手册原书第10版, 面积函数, 面积正弦函数, 面积余弦函数, 面积正切函数, 面积余切函数, 双曲函数, 反三角函数, 对数函数, 主值, 10-数学手册原书第10版--7-29-双曲函数--145kavb, 10-数学手册原书第10版--11-28-测圆或反三角函数--1yi9enf]
+created: 2026-09-29
+updated: 2026-09-29
+sources: ["数学手册(原书第10版)/2.10 面积函数.md"]
+---
+
+# 数学手册(原书第10版) 2.10 面积函数
+
+本节是 [[entities/数学手册原书第10版]] 第 2 章「初等函数」的第 10 节，紧接 2.9 双曲函数，是该章的收官小节之一。它给出双曲函数的反函数——[[concepts/面积函数]]（反双曲函数）——的完整体系：四个面积函数的定义（式 2.207–2.210）、定义域与值域（表 2.8）、自然对数表示（式 2.211–2.214）、不同面积函数间的互表关系（式 2.215–2.218）、和差公式（式 2.219–2.221）、负角公式（式 2.222–2.224）以及图像要素（图 2.53–2.56）。
+
+## 章节结构
+
+- 2.10.1 定义（2.10.1.1 面积正弦、2.10.1.2 面积余弦、2.10.1.3 面积正切、2.10.1.4 面积余切）
+- 2.10.2 利用自然对数对面积函数的确定
+- 2.10.3 不同面积函数间的关系
+- 2.10.4 面积函数的和与差
+- 2.10.5 负角公式
+
+## 核心主张（定义段原文）
+
+> 面积函数是双曲函数的反函数, 即反双曲函数. 函数 $\sinh x$ , $\tanh x$ 和 $\coth x$ 均严格单调, 因此没有任何限制地具有唯一反函数; 函数 $\cosh x$ 有两个单调区间, 因此存在两个反函数. 面积一词意指这些函数的几何意义是某些双曲线扇形的面积 (参见第 172 页 3.1.2.2).
+
+「面积」命名的几何依据（双曲线扇形面积）在本节仅作前向引用，未给出证明，见 [[queries/双曲线扇形面积的几何解释待验证]]。
+
+## 公式实录（原文照录）
+
+定义式：
+
+$$
+y = \operatorname{Arsinh} x\tag{2.207}
+$$
+
+$$
+y = \operatorname{Arcosh} x \quad {\text {和}} \quad y = - \operatorname{Arcosh} x\tag{2.208}
+$$
+
+$$
+y = \operatorname{Artanh} x\tag{2.209}
+$$
+
+$$
+y = \operatorname{Arcoth} x\tag{2.210}
+$$
+
+自然对数表示（手册注明由双曲函数定义式 (2.166)–(2.171)、第 115 页 2.9.1 导出）：
+
+$$
+\operatorname{Arsinh} x = \ln \left(x + \sqrt {x ^ {2} + 1}\right),\tag{2.211}
+$$
+
+$$
+\operatorname{Arcosh} x = \ln \left(x + \sqrt {x ^ {2} - 1}\right) = \ln \left(\frac {1}{x - \sqrt {x ^ {2} - 1}}\right) (x \geqslant 1),\tag{2.212}
+$$
+
+$$
+\operatorname{Artanh} x = \frac {1}{2} \ln \frac {1 + x}{1 - x} (| x | < 1),\tag{2.213}
+$$
+
+$$
+\operatorname{Arcoth} x = \frac {1}{2} \ln \frac {x + 1}{x - 1} \quad (| x | > 1).\tag{2.214}
+$$
+
+互表关系：
+
+$$
+\operatorname{Arsinh} x = (\operatorname{sign} x) \operatorname{Arcosh} \sqrt {x ^ {2} + 1} = \operatorname{Artanh} \frac {x}{\sqrt {x ^ {2} + 1}} = \operatorname{Arcoth} \frac {\sqrt {x ^ {2} + 1}}{x} \ (| x | < \infty),\tag{2.215}
+$$
+
+$$
+\operatorname{Arcosh} x = \operatorname{Arsinh} \sqrt {x ^ {2} - 1} = \operatorname{Artanh} \frac {\sqrt {x ^ {2} - 1}}{x} = \operatorname{Arcoth} \frac {x}{\sqrt {x ^ {2} - 1}} \ (| x | \geqslant 1),\tag{2.216}
+$$
+
+$$
+\operatorname{Artanh} x = \operatorname{Arsinh} \frac {x}{\sqrt {1 - x ^ {2}}} = \operatorname{Arcoth} \frac {1}{x} = (\operatorname{sign} x) \operatorname{Arcosh} \frac {1}{\sqrt {1 - x ^ {2}}} \ (| x | < 1),\tag{2.217}
+$$
+
+$$
+\operatorname{Arcoth} x = \operatorname{Artanh} \frac {1}{x} = (\operatorname{sign} x) \operatorname{Arsinh} \frac {1}{\sqrt {x ^ {2} - 1}} = (\operatorname{sign} x) \operatorname{Arcosh} \frac {| x |}{\sqrt {x ^ {2} - 1}} \ (| x | > 1).\tag{2.218}
+$$
+
+和差公式：
+
+$$
+\operatorname{Arsinh} x \pm \operatorname{Arsinh} y = \operatorname{Arsinh} \left(x \sqrt {1 + y ^ {2}} \pm y \sqrt {1 + x ^ {2}}\right),\tag{2.219}
+$$
+
+$$
+\operatorname{Arcosh} x \pm \operatorname{Arcosh} y = \operatorname{Arcosh} \left(x y \pm \sqrt {(x ^ {2} - 1) (y ^ {2} - 1)}\right),\tag{2.220}
+$$
+
+$$
+\operatorname{Artanh} x \pm \operatorname{Artanh} y = \operatorname{Artanh} \frac {x \pm y}{1 \pm x y}.\tag{2.221}
+$$
+
+负角公式：
+
+$$
+\operatorname{Arsinh} (- x) = - \operatorname{Arsinh} x,\tag{2.222}
+$$
+
+$$
+\operatorname{Artanh} (- x) = - \operatorname{Artanh} x,\tag{2.223}
+$$
+
+$$
+\operatorname{Arcoth} (- x) = - \operatorname{Arcoth} x.\tag{2.224}
+$$
+
+末句原文：「函数 Arsinh x, Artanhx 和 Arcothx 为奇函数, 当 x < 1 时, Arcosh x 无定义.」
+
+## 表 2.8 面积函数的定义域和值域（原文照录）
+
+| 面积函数 | 定义域 | 值域 | 具有相同意义的双曲函数 |
+|---|---|---|---|
+| 面积正弦 | | | |
+| y = Arsinh x | −∞ < x < ∞ | −∞ < y < ∞ | x = sinh y |
+| 面积余弦 | | | |
+| y = Arcosh x | | 0 ≤ y < ∞ | |
+| y = −Arcosh x | 1 ≤ x < ∞ | −∞ < y ≤ 0 | x = cosh y |
+| 面积正切 | | | |
+| y = Artanh x | \|x\| < 1 | −∞ < y < ∞ | x = tanh y |
+| 面积余切 | | | |
+| y = Arcoth x | \|x\| > 1 | −∞ < y < 0 | x = coth y |
+| | | 0 < y < ∞ | |
+
+注：原表将 Arcosh 与 Arcoth 的定义域单元格跨两行合并，导致两个值域行各自对应的定义域子区间（Arcoth：x < −1 ↔ y ∈ (−∞, 0)；x > 1 ↔ y ∈ (0, ∞)）未在表中显示，见 [[queries/表2-8定义域跨行合并是否为转写丢失]]。
+
+## 图像
+
+![图 2.53](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/001-b836a42cf0be952d499a36b1439353c4c174775128cbbe528546759f6ceb3ee8.jpg)
+
+![图 2.54](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/002-9d552cf7ce5cd5708302abc3069995b38812f37d3f288278fdec21a5d7365586.jpg)
+
+![图 2.55](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/003-1f295db24a159b99786fef269d57c1af6b131dbd73b9a04c5038941e2ff94805.jpg)
+
+![图 2.56](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/004-fd69e3ac646c7f9d85564373f9d6972a7747de4ddef0b8aaf90e0e2a82511496.jpg)
+
+图 2.53–2.56 依次对应 Arsinh、Arcosh/−Arcosh、Artanh、Arcoth。其中图 2.53（Arsinh 的图）出现在 2.10.1.2 段落之后而非 2.10.1.1 内，与手册既往各节的图题错位模式一致（次要版式疑点，一句带过）。
+
+## 数学疑点（本源最有价值的质量发现）
+
+1. **Artanh 定义域内部矛盾**：正文 2.10.1.3 称「仅在 |x| ≤ 1 时有定义」，但表 2.8 与式 2.213 的条件均为 |x| < 1，且函数有铅直渐近线 x = ±1（±1 处不可达）。见 [[queries/正文Artanh定义域小于等于1是否应为小于1]]。
+2. **coth「严格单调」表述不严谨**：coth 在整个定义域 ℝ\{0} 上并非单调，仅在两支上分别严格递减；但两支值域不相交，故仍为单射，唯一反函数的结论成立。见 [[queries/coth严格单调表述是否应修正为两支递减]]。
+3. **式 2.220 减法分支符号矛盾**：Arcosh x − Arcosh y = Arcosh(xy − √((x²−1)(y²−1))) 仅在 x ≥ y 时成立（右端恒 ≥ 0，左端在 x < y 时为负；数值反例 x = 1, y = 2）。手册未给分段条件，与 2.8 节和差公式的分段体系形成反差。见 [[queries/式2-220减法分支是否缺少x大于等于y条件]]。
+4. **式 2.215/2.217 在 x = 0 处失效**：含 1/x 的表示在 x = 0 处无定义，但所给条件（|x| < ∞ 与 |x| < 1）未排除 x = 0；式 2.216 的 Arcoth(x/√(x²−1)) 在 x = 1 处同理仅在极限意义下成立。见 [[queries/式2-215与2-217在x等于0处是否失效]]。
+5. **本节未定义 Arsech/Arcsch**：与 2.9 节表 2.7 不含 sech/csch 的口径一脉相承，见 [[queries/表2-7为何不含sech与csch]]。
+
+本节不与既有 wiki 的 2.6、2.8、2.9 内容冲突，属纯增量扩展。
+
+## 与既有 wiki 的联系
+
+- 直接延伸 [[sources/10-数学手册原书第10版--7-29-双曲函数--145kavb]]（2.9 节）：本节为其反函数续篇，显式引用式 (2.166)–(2.171) 推导对数表示。
+- 结构平行于 2.8 反三角函数（[[concepts/反三角函数]]，源页 [[sources/10-数学手册原书第10版--11-28-测圆或反三角函数--1yi9enf]]），系统比较见 [[comparisons/面积函数与反三角函数比较]]。
+- 呼应 [[concepts/对数函数]]（2.6 节）：式 2.211–2.214 是对数函数的重要应用实例。
+- 呼应 [[concepts/主值]]：Arcosh 主支（y ≥ 0）与 −Arcosh 的关系，完全平行于 arccos 的主值讨论。
+
+## 本源派生页面
+
+- 概念：[[concepts/面积函数]]、[[concepts/面积正弦函数]]、[[concepts/面积余弦函数]]、[[concepts/面积正切函数]]、[[concepts/面积余切函数]]
+- 发现：[[findings/面积函数的定义与cosh双支反演]]、[[findings/面积函数的定义域与值域]]、[[findings/面积函数的自然对数表示]]、[[findings/四种面积函数的互表关系]]、[[findings/面积函数的和差公式]]、[[findings/面积函数的负角公式与奇函数性]]、[[findings/面积函数的图像要素体系]]
+- 比较：[[comparisons/面积函数与反三角函数比较]]、[[comparisons/面积正弦与面积余弦比较]]、[[comparisons/面积正切与面积余切比较]]
+- 方法：[[methodology/面积函数图像绘制法]]
+
+<!-- llm-wiki:embedded-images -->
+## Embedded Images
+
+### Document
+
+![](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/001-b836a42cf0be952d499a36b1439353c4c174775128cbbe528546759f6ceb3ee8.jpg)
+![](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/002-9d552cf7ce5cd5708302abc3069995b38812f37d3f288278fdec21a5d7365586.jpg)
+![](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/003-1f295db24a159b99786fef269d57c1af6b131dbd73b9a04c5038941e2ff94805.jpg)
+![](../media/10-数学手册原书第10版--8-210-面积函数--1cebibi/004-fd69e3ac646c7f9f85564373f9d6972a7747de4ddef0b8aaf90e0e2a82511496.jpg)
+<!-- llm-wiki:embedded-images -->

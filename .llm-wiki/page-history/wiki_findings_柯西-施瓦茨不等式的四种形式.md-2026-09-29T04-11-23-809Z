@@ -1,0 +1,28 @@
+---
+type: finding
+title: 柯西-施瓦茨不等式的四种形式（式 1.114–1.117）
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式, 公式]
+related: [柯西-施瓦茨不等式, 有限级数, 赫尔德不等式]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+source: "[[sources/10-数学手册原书第10版--6-14-不等式--z8nyhr]]"
+confidence: high
+replicated: null
+---
+
+# 柯西-施瓦茨不等式的四种形式（式 1.114–1.117）
+
+《数学手册(原书第10版)》1.4.2.9 以四个式号给出柯西-施瓦茨不等式的平行形式：
+
+1. **实数（1.114a/b）**：$\left|\sum a_ib_i\right| \leqslant \sqrt{\sum a_i^2}\sqrt{\sum b_i^2}$（平方形式 1.114b 等价）。等号当且仅当 $a_1:b_1=\cdots=a_n:b_n$。$n=3$ 时可解释为笛卡儿坐标系中两向量内积的绝对值不超过向量绝对值之积，$n>3$ 时推广到 n 维欧几里得空间的向量。
+2. **复数（1.115）**：以 $|z|^2=z^*z$ 表述，$\left(\sum z_kw_k\right)^{*}\left(\sum z_kw_k\right) \leqslant \left(\sum z_k^{*}z_k\right)\left(\sum w_k^{*}w_k\right)$。
+3. **无穷收敛级数（1.116）**：$\left(\sum a_nb_n\right)^2 \leqslant \left(\sum a_n^2\right)\left(\sum b_n^2\right)$。
+4. **积分（1.117）**：$\left[\int_a^b f\varphi\,\mathrm{d}x\right]^2 \leqslant \left(\int_a^b f^2\,\mathrm{d}x\right)\left(\int_a^b \varphi^2\,\mathrm{d}x\right)$，手册表述为对“某些积分”成立。
+
+## 评价
+
+- 等号条件（连比例式）仅实数版明示；复数、级数、积分版均未附。
+- 级数版要求级数收敛（见 [[concepts/有限级数]]）；积分版的适用范围手册仅含糊表述为“某些积分”。
+- 在赫尔德不等式中取 $p=q=2$ 可得级数形式——标准推论，非手册本节明示（见 [[concepts/赫尔德不等式]]）。
+- 属标准事实；手册未附证明，replicated: null。概念页：[[concepts/柯西-施瓦茨不等式]]。

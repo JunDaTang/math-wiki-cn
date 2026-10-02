@@ -1,0 +1,43 @@
+---
+type: finding
+title: "正切与余切的周期、渐近线、单调性与拐点（式 2.68–2.69）"
+tags: [数学手册, 三角函数, 正切, 余切, 渐近线]
+related: [正切函数, 余切函数, 渐近线, 无穷间断点, 极点]
+created: 2026-09-29
+updated: 2026-09-29
+source: "[[10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy]]"
+confidence: high
+replicated: true
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+---
+
+# 正切与余切的周期、渐近线、单调性与拐点（式 2.68–2.69）
+
+## 手册主张
+
+正切函数 $y = \tan x$（2.68）：
+
+- 周期 $T = \pi$；渐近线 $x = \left(k+\frac{1}{2}\right)\pi$（k = 0, ±1, ±2, …）；
+- 在 $\left(-\frac{\pi}{2}+k\pi,\ +\frac{\pi}{2}+k\pi\right)$ 内单调递增，取值由 −∞ 到 +∞（值域 ℝ）；
+- 与 x 轴交点 $A_k = (k\pi, 0)$，均为拐点，切线倾斜角 $\frac{\pi}{4}$。
+
+余切函数
+
+$$y = \cot x = -\tan\left(x + \frac{\pi}{2}\right) \tag{2.69}$$
+
+图像由正切曲线沿 x 轴反射并向左平移 $\frac{\pi}{2}$ 个单位得到：
+
+- 渐近线 $x = k\pi$；在 $(0, \pi)$ 单调递减，取值由 +∞ 到 −∞；周期 $T = \pi$；
+- 与 x 轴交点 $A_k = \left(\left(k+\frac{1}{2}\right)\pi,\ 0\right)$，均为拐点，切线倾斜角 $-\frac{\pi}{4}$。
+
+## 独立验证
+
+恒等式核验：$-\tan\left(x+\frac{\pi}{2}\right) = -\frac{\sin(x+\frac{\pi}{2})}{\cos(x+\frac{\pi}{2})} = -\frac{\cos x}{-\sin x} = \cot x$。✓
+
+拐点斜率核验：$\tan'(k\pi) = \sec^2(k\pi) = 1$（倾斜角 π/4）；$\cot'\left(\left(k+\frac{1}{2}\right)\pi\right) = -\csc^2\left(\left(k+\frac{1}{2}\right)\pi\right) = -1$（倾斜角 −π/4）。✓
+
+渐近线分别来自 cos x 与 sin x 的零点，为无穷间断点（[[concepts/极点]]），与 2.1.5 节的间断点术语体系一致。验证通过。
+
+## 关联
+
+[[concepts/正切函数]]、[[concepts/余切函数]]、[[concepts/渐近线]]、[[concepts/无穷间断点]]、[[comparisons/六种三角函数比较]]

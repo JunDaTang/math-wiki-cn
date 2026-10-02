@@ -1,0 +1,36 @@
+---
+type: finding
+title: 面积函数的自然对数表示（式 2.211–2.214）
+tags: [面积函数, 对数函数, 解析表示]
+related: [面积函数, 对数函数, 双曲函数, 双曲恒等式]
+created: 2026-09-29
+updated: 2026-09-29
+source: "[[sources/10-数学手册原书第10版--8-210-面积函数--1cebibi]]"
+confidence: high
+replicated: true
+sources: ["数学手册(原书第10版)/2.10 面积函数.md"]
+---
+
+# 面积函数的自然对数表示（式 2.211–2.214）
+
+**发现**：手册指出，由双曲函数的定义（式 (2.166)–(2.171)，参见第 115 页 2.9.1）可知，面积函数可由对数函数表示：
+
+$$
+\operatorname{Arsinh} x = \ln \left(x + \sqrt {x ^ {2} + 1}\right) \tag{2.211}
+$$
+
+$$
+\operatorname{Arcosh} x = \ln \left(x + \sqrt {x ^ {2} - 1}\right) = \ln \left(\frac {1}{x - \sqrt {x ^ {2} - 1}}\right) (x \geqslant 1) \tag{2.212}
+$$
+
+$$
+\operatorname{Artanh} x = \frac {1}{2} \ln \frac {1 + x}{1 - x} \quad (| x | < 1) \tag{2.213}
+$$
+
+$$
+\operatorname{Arcoth} x = \frac {1}{2} \ln \frac {x + 1}{x - 1} \quad (| x | > 1) \tag{2.214}
+$$
+
+**证据强度**：强。四式均可由双曲函数的指数定义代数推导（如由 y = sinh x = (eˣ − e⁻ˣ)/2 解二次方程即得式 2.211）。式 2.212 的第二个等式（倒式表示）已经有理化核验恒等（转写后分析的复算）。
+
+**意义**：这是 [[concepts/面积函数]] 与 [[concepts/反三角函数]] 的关键差异——面积函数拥有全局的初等（对数）闭式表示，而反三角函数没有。式 2.211–2.214 同时是 [[concepts/对数函数]] 的重要应用实例。

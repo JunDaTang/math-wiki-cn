@@ -1,0 +1,31 @@
+---
+type: concept
+title: 余切函数
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 三角函数, 渐近线]
+related: [三角函数, 正切函数, 余割函数, 渐近线, 无穷间断点, 拐点]
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+---
+
+# 余切函数
+
+余切函数是六个基本三角函数之一，$y=\cot x=-\tan\left(x+\frac{\pi}{2}\right)$（式 2.69），由商关系 $\cot\alpha=\frac{\cos\alpha}{\sin\alpha}$（式 2.89）定义，其图像可由正切曲线沿 x 轴反射并向左平移 $\frac{\pi}{2}$ 个单位得到。
+
+## 图像要素
+
+- **周期**：$T=\pi$。
+- **渐近线**：$x=k\pi$（$k=0,\pm1,\pm2,\cdots$），即 $\sin x$ 的零点处。
+- **单调性**：在 $(0,\pi)$ 单调递减，取值由 $+\infty$ 到 $-\infty$（无界）。
+- **与 x 轴交点**：$A_k=\left(\left(k+\frac{1}{2}\right)\pi,0\right)$，均为拐点，此处切线倾斜角为 $-\frac{\pi}{4}$。
+- **极值点**：无。
+
+## 与其他函数的关系
+
+- $\cot x=-\tan\left(x+\frac{\pi}{2}\right)$（反射＋左移，该变换关系已经代数验证）。
+- $\csc^2\alpha-\cot^2\alpha=1$（式 2.84）。
+- $\csc x=\frac{1}{\sin x}$ 与 cot 共享 sin 的零点作为渐近线（[[concepts/余割函数]]）。
+
+## 相关页面
+
+[[findings/正切与余切的周期渐近线单调性与拐点]]、[[comparisons/正切与余切比较]]、[[comparisons/六种三角函数性质比较]]。

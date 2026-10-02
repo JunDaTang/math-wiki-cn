@@ -1,0 +1,44 @@
+---
+type: concept
+title: 三角不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式, 绝对值]
+related: [不等式, 闵可夫斯基不等式, 柯西-施瓦茨不等式]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+---
+
+# 三角不等式
+
+三角不等式断言：两个或多个数之和的绝对值（复数情形为模）不超过各数的绝对值（模）之和。《数学手册(原书第10版)》1.4.2.1–1.4.2.3（式 1.104–1.108）给出实数版、复数版以及差的双边估计。
+
+## 实数形式（式 1.104–1.105）
+
+对任意实数 $a,b$ 及 $a_1,\dots,a_n\in\mathbb{R}$：
+
+$$|a+b| \leqslant |a|+|b| \tag{1.104}$$
+
+$$\left|a_1+a_2+\dots+a_n\right| \leqslant \left|a_1\right|+\left|a_2\right|+\dots+\left|a_n\right| \tag{1.105}$$
+
+当且仅当被加数的符号相同时取等号——这是手册在本组不等式中唯一明示的等号条件。
+
+## 复数形式（式 1.106–1.107）
+
+对 $z_1,\dots,z_n\in\mathbb{C}$：
+
+$$|z_1+z_2| \leqslant |z_1|+|z_2| \tag{1.106}$$
+
+$$\left|z_1+z_2+\dots+z_n\right| \leqslant \left|z_1\right|+\left|z_2\right|+\dots+\left|z_n\right| \tag{1.107}$$
+
+## 差的绝对值双边估计（式 1.108a/b）
+
+$$\left|\,|a|-|b|\,\right| \leqslant |a-b| \leqslant |a|+|b| \tag{1.108a}$$
+
+$$\left|\,|z_1|-|z_2|\,\right| \leqslant |z_1-z_2| \leqslant |z_1|+|z_2| \tag{1.108b}$$
+
+即两数之差的绝对值不超过其绝对值（模）之和、不小于其绝对值（模）之差的绝对值。手册未给等号条件。
+
+## 与其他不等式的关系
+
+- 从范数观点看，[[concepts/闵可夫斯基不等式]]（式 1.121，$p\geqslant 1$）是三角不等式向 p-范数的推广——此为标准数学观点，非手册本节明示。
+- 汇总对比见 [[comparisons/特殊不等式比较]]；公式出处记录见 [[findings/实数与复数的三角不等式及差的绝对值估计]]。

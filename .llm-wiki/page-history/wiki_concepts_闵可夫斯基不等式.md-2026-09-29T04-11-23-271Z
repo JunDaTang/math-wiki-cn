@@ -1,0 +1,33 @@
+---
+type: concept
+title: 闵可夫斯基不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式]
+related: [不等式, 三角不等式, 赫尔德不等式]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+---
+
+# 闵可夫斯基不等式
+
+闵可夫斯基不等式断言：当 $p\geqslant 1$ 时，和的 p-范数不超过 p-范数之和，即 p-范数意义下的三角不等式。《数学手册(原书第10版)》1.4.2.13 给出级数形式（式 1.121a）与积分形式（式 1.121b）。
+
+## 级数形式（式 1.121a）
+
+若 $p\geqslant 1$，$\{x_k\}$、$\{y_k\}$ 是两列复数：
+
+$$\left[\sum_{k=1}^{\infty}|x_k+y_k|^p\right]^{\frac{1}{p}} \leqslant \left[\sum_{k=1}^{\infty}|x_k|^p\right]^{\frac{1}{p}}+\left[\sum_{k=1}^{\infty}|y_k|^p\right]^{\frac{1}{p}} \tag{1.121a}$$
+
+## 积分形式（式 1.121b）
+
+对可测空间 $(X,\mathcal{A},\mu)$ 上的可测函数 $f,g$：
+
+$$\left[\int_X|f(x)+g(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}} \leqslant \left[\int_X|f(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}}+\left[\int_X|g(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}} \tag{1.121b}$$
+
+## 备注
+
+- 手册明示 $p\geqslant 1$（与 [[concepts/赫尔德不等式]] 一节未明示指数下界的表述形成对照）。
+- 数列取复数、函数取可测函数（前向引用“第 907 页 12.9.2”，尚未导入）；手册未给等号条件。
+- 从范数角度看，本不等式是 [[concepts/三角不等式]] 向 p-范数的推广——标准观点，非手册原文陈述。
+
+出处记录见 [[findings/赫尔德与闵可夫斯基不等式]]。

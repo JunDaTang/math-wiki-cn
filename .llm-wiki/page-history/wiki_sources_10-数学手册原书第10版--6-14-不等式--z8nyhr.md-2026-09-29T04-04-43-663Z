@@ -1,0 +1,216 @@
+---
+type: source
+title: 数学手册(原书第10版) 1.4 不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式, 工具书]
+related: [数学手册(原书第10版), 不等式, 三角不等式, 算术-几何平均不等式, 伯努利不等式, 二项式不等式, 柯西-施瓦茨不等式, 切比雪夫不等式, 赫尔德不等式, 闵可夫斯基不等式, 线性不等式, 二次不等式, 特殊不等式比较]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+authors: []
+year: ""
+url: ""
+venue: ""
+---
+
+# 数学手册(原书第10版) 1.4 不等式
+
+本页是《数学手册(原书第10版)》第 1 章“代数”第 4 节“不等式”的导入摘要。该节系统给出不等式的定义与术语、类型 I/II（严格不等号）不等式的七组运算性质（式 1.97–1.103）、十三组“特殊不等式”（式 1.104–1.121），以及线性与二次不等式的求解方法（式 1.122–1.130）。全书概况见 [[entities/数学手册(原书第10版)]]；本节是本 wiki 已导入的第 1 章 1.1–1.3 各节与第 2 章函数各节的自然延续。作为工具书条目，本节只陈述结论与前提条件，不给证明。
+
+## 小节结构
+
+| 小节 | 内容 | 式号 |
+|---|---|---|
+| 1.4.1 纯不等式 | 定义（符号类型、恒等/同向/反向/等价不等式、不等式的解）；类型 I/II 的运算性质 | 1.97–1.103 |
+| 1.4.2 特殊不等式 | 三角不等式（实数、复数）、差的绝对值双边估计、算术-几何平均、算术平均-二次均值、四均值链、伯努利、二项式、柯西-施瓦茨（四形式）、切比雪夫（含广义）、赫尔德、闵可夫斯基 | 1.104–1.121 |
+| 1.4.3 线性不等式和二次不等式的解 | ax>b 的解；x²≷m 的符号分类；一般二次式的配方代换与三个算例 | 1.122–1.130 |
+
+## 1.4.1 纯不等式：定义与运算性质
+
+### 定义要点（1.4.1.1）
+
+- **不等式**是对两个实代数式的比较，用下述符号之一表示；手册将符号编为“类型 I–V”及其 a 变体（转写文本中该表残缺，见“转写疑点”）。类型 I 为 $>$（“大于”），类型 II 为 $<$（“小于”）。
+- **恒等不等式**：式子中字母取任意值时都成立的不等式。**同向不等式**：同属类型 I 或同属类型 II。**反向不等式**：一个属类型 I、另一个属类型 II。**等价不等式**：包含在式子中的未知数取相同值时完全成立的不等式。
+- **不等式的解（组的解）**：使不等式（组）成立的未知数的变化范围。手册指出“任何类型的不等式都可求解，大多数情况下，都是求解类型 I 和类型 II 的纯不等式”。
+
+### 类型 I/II 的运算性质（式 1.97–1.103）
+
+1. **改变不等号方向（1.97a/b）**：$a>b \Leftrightarrow b<a$；$a<b \Leftrightarrow b>a$。
+2. **传递性（1.98a/b）**：$a>b,\ b>c \Rightarrow a>c$；$a<b,\ b<c \Rightarrow a<c$。
+3. **加减同一个量（1.99a/b）**：$a>b \Rightarrow a\pm c>b\pm c$，方向不变。
+4. **同向不等式相加（1.100a/b）**：$a>b,\ c>d \Rightarrow a+c>b+d$。
+5. **反向不等式相减（1.101a/b）**：$a>b,\ c<d \Rightarrow a-c>b-d$；结果方向与第一个不等式一致；**同向不等式不能相减**。
+6. **乘除同一个量（1.102a–d）**：$c>0$ 时 $ac>bc$、$\frac{a}{c}>\frac{b}{c}$；$c<0$ 时不等号方向改变。
+7. **倒数（1.103）**：$0<a<b$ 或 $a<b<0 \Rightarrow \frac{1}{a}>\frac{1}{b}$，即同号取倒数后方向相反。
+
+详见 [[findings/纯不等式的基本运算性质]] 与 [[concepts/不等式]]。
+
+## 1.4.2 特殊不等式（式 1.104–1.121）
+
+### 实数三角不等式（1.4.2.1）
+
+$$|a+b| \leqslant |a|+|b| \tag{1.104}$$
+
+$$\left|a_1+a_2+\dots+a_n\right| \leqslant \left|a_1\right|+\left|a_2\right|+\dots+\left|a_n\right| \tag{1.105}$$
+
+对任意实数成立；当且仅当被加数的符号相同时取等。见 [[concepts/三角不等式]]。
+
+### 复数三角不等式（1.4.2.2）
+
+$$|z_1+z_2| \leqslant |z_1|+|z_2| \tag{1.106}$$
+
+$$\left|z_1+z_2+\dots+z_n\right| \leqslant \left|z_1\right|+\left|z_2\right|+\dots+\left|z_n\right| \tag{1.107}$$
+
+### 差的绝对值双边估计（1.4.2.3）
+
+$$\left|\,|a|-|b|\,\right| \leqslant |a-b| \leqslant |a|+|b| \tag{1.108a}$$
+
+$$\left|\,|z_1|-|z_2|\,\right| \leqslant |z_1-z_2| \leqslant |z_1|+|z_2| \tag{1.108b}$$
+
+### 算术-几何平均不等式（1.4.2.4）
+
+$$\frac{a_1+a_2+\cdots+a_n}{n} \geqslant \sqrt[n]{a_1a_2\cdots a_n},\qquad a_i>0 \tag{1.109}$$
+
+等号当且仅当 n 个数全部相等。见 [[concepts/算术-几何平均不等式]]。
+
+### 算术平均-二次均值不等式（1.4.2.5）
+
+$$\left|\frac{a_1+a_2+\cdots+a_n}{n}\right| \leqslant \sqrt{\frac{a_1^2+a_2^2+\cdots+a_n^2}{n}} \tag{1.110}$$
+
+对任意实数成立（无正性要求），手册未给等号条件。
+
+### 四均值链（1.4.2.6）
+
+对两个正实数 $a<b$（手册自注“也可参见第25页1.2.5.5”）：
+
+$$a < x_{\mathrm{H}} < x_{\mathrm{G}} < x_{\mathrm{A}} < x_{\mathrm{Q}} < b \tag{1.111a}$$
+
+$$x_{\mathrm{A}}=\frac{a+b}{2},\quad x_{\mathrm{G}}=\sqrt{ab},\quad x_{\mathrm{H}}=\frac{2ab}{a+b},\quad x_{\mathrm{Q}}=\sqrt{\frac{a^2+b^2}{2}} \tag{1.111b}$$
+
+与 [[findings/均值不等式链-xH-xG-xA-xQ]]、[[comparisons/四种均值的大小关系]] 为同一定理的重复陈述（强化而非新增）。
+
+### 伯努利不等式（1.4.2.7）
+
+$$(1+a)^n \geqslant 1+na,\qquad a\geqslant-1,\ n\in\mathbb{Z},\ n\geqslant 1 \tag{1.112}$$
+
+等号当且仅当 $n=1$ 或 $a=0$。见 [[concepts/伯努利不等式]]。
+
+### 二项式不等式（1.4.2.8）
+
+$$|ab| \leqslant \frac{1}{2}(a^2+b^2) \tag{1.113}$$
+
+对任意实数成立，手册未给等号条件。见 [[concepts/二项式不等式]]。
+
+### 柯西-施瓦茨不等式（1.4.2.9）
+
+实数形式（等价两式）：
+
+$$\left|a_1b_1+a_2b_2+\dots+a_nb_n\right| \leqslant \sqrt{a_1^2+a_2^2+\cdots+a_n^2}\,\sqrt{b_1^2+b_2^2+\cdots+b_n^2} \tag{1.114a}$$
+
+$$\left(a_1b_1+\dots+a_nb_n\right)^2 \leqslant \left(a_1^2+\cdots+a_n^2\right)\left(b_1^2+\cdots+b_n^2\right) \tag{1.114b}$$
+
+等号当且仅当 $a_1:b_1=a_2:b_2=\cdots=a_n:b_n$。若 $n=3$，把两组数视为笛卡儿坐标系中的向量，则本不等式即两向量内积的绝对值小于等于两向量绝对值之积；$n>3$ 时可扩展到 n 维欧几里得空间的向量。
+
+复数形式（利用 $|z|^2=z^*z$，$z^*$ 为复共轭）：
+
+$$\left(\sum_{k=1}^{n}z_kw_k\right)^{*}\left(\sum_{k=1}^{n}z_kw_k\right) \leqslant \left(\sum_{k=1}^{n}z_k^{*}z_k\right)\left(\sum_{k=1}^{n}w_k^{*}w_k\right) \tag{1.115}$$
+
+级数形式（无穷收敛级数）与积分形式（“某些积分”）：
+
+$$\left(\sum_{n=1}^{\infty}a_nb_n\right)^2 \leqslant \left(\sum_{n=1}^{\infty}a_n^2\right)\left(\sum_{n=1}^{\infty}b_n^2\right) \tag{1.116}$$
+
+$$\left[\int_a^b f(x)\varphi(x)\,\mathrm{d}x\right]^2 \leqslant \left(\int_a^b [f(x)]^2\,\mathrm{d}x\right)\left(\int_a^b [\varphi(x)]^2\,\mathrm{d}x\right) \tag{1.117}$$
+
+见 [[concepts/柯西-施瓦茨不等式]]。
+
+### 切比雪夫不等式及其广义形式（1.4.2.10–1.4.2.11）
+
+设 $a_1,\dots,a_n$ 与 $b_1,\dots,b_n$ 是正实数。两列同为递增或同为递减时：
+
+$$\left(\frac{a_1+\cdots+a_n}{n}\right)\left(\frac{b_1+\cdots+b_n}{n}\right) \leqslant \frac{a_1b_1+\cdots+a_nb_n}{n} \tag{1.118a}$$
+
+一列递增、另一列递减时：
+
+$$\left(\frac{a_1+\cdots+a_n}{n}\right)\left(\frac{b_1+\cdots+b_n}{n}\right) \geqslant \frac{a_1b_1+\cdots+a_nb_n}{n} \tag{1.118b}$$
+
+广义形式（k 次幂均值，排序条件同上；异向单调时不等号反向，式 1.119b）：
+
+$$\sqrt[k]{\frac{a_1^k+\cdots+a_n^k}{n}}\;\sqrt[k]{\frac{b_1^k+\cdots+b_n^k}{n}} \leqslant \sqrt[k]{\frac{(a_1b_1)^k+\cdots+(a_nb_n)^k}{n}} \tag{1.119a}$$
+
+见 [[concepts/切比雪夫不等式]]。
+
+### 赫尔德不等式（1.4.2.12）
+
+原文设“p 和 q 是两个实数，且满足 $\frac{1}{p}+\frac{1}{q}=1$”（未明示 $p,q>1$，见“转写疑点”）。有限和与无穷级数（$x_k,y_k\in\mathbb{C}$；据右边级数的收敛性可推出左边级数的收敛性）：
+
+$$\sum_{k=1}^{n}|x_ky_k| \leqslant \left[\sum_{k=1}^{n}|x_k|^p\right]^{\frac{1}{p}}\left[\sum_{k=1}^{n}|y_k|^q\right]^{\frac{1}{q}} \tag{1.120a}$$
+
+$$\sum_{k=1}^{\infty}|x_ky_k| \leqslant \left[\sum_{k=1}^{\infty}|x_k|^p\right]^{\frac{1}{p}}\left[\sum_{k=1}^{\infty}|y_k|^q\right]^{\frac{1}{q}} \tag{1.120b}$$
+
+积分形式（$f,g$ 为可测空间 $(X,\mathcal{A},\mu)$ 上的可测函数，手册前向引用“第 907 页 12.9.2”）：
+
+$$\int_X|f(x)g(x)|\,\mathrm{d}\mu \leqslant \left[\int_X|f(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}}\left[\int_X|g(x)|^q\,\mathrm{d}\mu\right]^{\frac{1}{q}} \tag{1.120c}$$
+
+见 [[concepts/赫尔德不等式]]。
+
+### 闵可夫斯基不等式（1.4.2.13）
+
+明示 $p\geqslant 1$，$x_k,y_k\in\mathbb{C}$：
+
+$$\left[\sum_{k=1}^{\infty}|x_k+y_k|^p\right]^{\frac{1}{p}} \leqslant \left[\sum_{k=1}^{\infty}|x_k|^p\right]^{\frac{1}{p}}+\left[\sum_{k=1}^{\infty}|y_k|^p\right]^{\frac{1}{p}} \tag{1.121a}$$
+
+积分形式（可测函数）：
+
+$$\left[\int_X|f(x)+g(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}} \leqslant \left[\int_X|f(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}}+\left[\int_X|g(x)|^p\,\mathrm{d}\mu\right]^{\frac{1}{p}} \tag{1.121b}$$
+
+见 [[concepts/闵可夫斯基不等式]]。
+
+## 1.4.3 线性不等式和二次不等式的解（式 1.122–1.130）
+
+### 概述（1.4.3.1）
+
+通过逐步变换成**等价不等式**求解：两边可同时加上相同的式子（移项变号）；可乘以或除以一个非零式，式子为正值时不等号方向不变，为负值时方向改变。一次不等式总可化为
+
+$$ax>b \tag{1.122}$$
+
+二次不等式的最简形式为 $x^2>m$（1.123a）或 $x^2<m$（1.123b），一般形式为 $ax^2+bx+c>0$（1.124a）或 $ax^2+bx+c<0$（1.124b）。
+
+### 线性不等式（1.4.3.2）
+
+$a>0$ 时 $x>\frac{b}{a}$；$a<0$ 时 $x<\frac{b}{a}$（1.125a）。算例（1.125b）：
+
+$$5x+3<8x+1\;\Rightarrow\;5x-8x<1-3\;\Rightarrow\;-3x<-2\;\Rightarrow\;x>\frac{2}{3}$$
+
+### 二次不等式 x² ≷ m 的符号分类（1.4.3.3）
+
+| 情形 | 条件 | 解 | 式号 |
+|---|---|---|---|
+| $x^2>m$ | $m\geqslant 0$ | $x>\sqrt{m}$ 和 $x<-\sqrt{m}$（即 $\vert x\vert>\sqrt{m}$） | 1.127a |
+| $x^2>m$ | $m<0$ | 对任意 $x$ 恒成立 | 1.127b |
+| $x^2<m$ | $m>0$ | $-\sqrt{m}<x<\sqrt{m}$（即 $\vert x\vert<\sqrt{m}$） | 1.128a |
+| $x^2<m$ | $m\leqslant 0$ | 无解 | 1.128b |
+
+### 一般二次不等式的配方代换（1.4.3.4）
+
+对 $ax^2+bx+c>0$（1.129a）或 $ax^2+bx+c<0$（1.129b）：两边先除以 $a$（$a<0$ 时不等号方向改变），化为 $x^2+px+q<0$（1.129c）或 $x^2+px+q>0$（1.129d）；配方得 $\left(x+\frac{p}{2}\right)^2<\left(\frac{p}{2}\right)^2-q$（1.129e）或 $>$（1.129f）；用 $z$ 替换 $x+\frac{p}{2}$、用 $m$ 替换 $\left(\frac{p}{2}\right)^2-q$，化为 $z^2<m$（1.130a）或 $z^2>m$（1.130b），解出后换回 $x$。
+
+手册算例：
+
+- **A**：$-2x^2+14x-20>0 \Rightarrow x^2-7x+10<0 \Rightarrow \left(x-\frac{7}{2}\right)^2<\frac{9}{4}$，其解为 $2<x<5$。
+- **B**：$x^2+6x+15>0 \Rightarrow (x+3)^2>-6$，不等式恒成立。
+- **C**：$-2x^2+14x-20<0 \Rightarrow \left(x-\frac{7}{2}\right)^2>\frac{9}{4}$，其解为 $x>5$ 和 $x<2$。
+
+三个算例已数值核验（如 $x^2-7x+10=(x-2)(x-5)$）。见 [[concepts/线性不等式]]、[[concepts/二次不等式]]、[[findings/线性不等式的求解]]、[[findings/二次不等式的配方代换解法]]。
+
+## 转写疑点（勘误候选）
+
+1. **1.4.1.1 符号类型表残缺错乱**：转写文本中"⩾"单独悬浮、无编号；“类型 V ⩽（‘小于或等于’）类型 V a ≠（‘不大于’）”的编号与释义不符（≠ 应释为“不等于”，“不大于”对应的符号应为 ≮）；“符号III也可以用于‘大于’或‘小于’无法定义的那类量，比如复数或向量”一句中，⩾ 对复数/向量并无定义，所指符号疑为表示“不等于”者。详见 [[queries/手册1.4.1.1符号类型表是否转写错乱]]。
+2. **赫尔德不等式的指数条件疑漏抄**：原文仅“p 和 q 是两个实数，且满足 1/p+1/q=1”，未明示 $p,q>1$；若无此限制（如 $p<1$ 时 $q<0$），不等式一般不成立。详见 [[queries/赫尔德不等式原文是否漏抄pq大于1条件]]。
+3. **“纯不等式”术语**：定义段转写残缺；结合“求解类型 I 和类型 II 的纯不等式”一语推断其指严格不等号（类型 I/II）的不等式，此为推断，已在 [[concepts/不等式]] 中注明。
+
+## 与既有 wiki 的联系
+
+- **强化**：式 1.111 与 [[findings/均值不等式链-xH-xG-xA-xQ]]、[[comparisons/四种均值的大小关系]] 为同一内容（手册自注交叉引用“第25页1.2.5.5”）。
+- **延伸**：[[concepts/算术平均值]]、[[concepts/几何平均值]]、[[concepts/调和平均值]]、[[concepts/二次均值]] 可由式 1.109–1.110 补入 n 数推广。
+- **关联**：[[concepts/有限级数]]（式 1.116、1.120b 的无穷收敛级数及“右收敛推左收敛”注记）；[[concepts/二项式定理]]（伯努利不等式与“二项式不等式”命名的背景）；[[queries/第16章统计均值与有限级数节均值定义是否一致]]（均值主题的既有开放问题）。
+- **前向引用**：赫尔德/闵可夫斯基积分版指向“第 907 页 12.9.2”（可测函数），该节尚未导入本 wiki，暂作占位。
+- **使用注意**：各特殊不等式的前提与等号条件互不相同，不可跨不等式转移；系统对比见 [[comparisons/特殊不等式比较]]。

@@ -1,0 +1,133 @@
+---
+type: source
+title: "数学手册(原书第10版) 5.4.3 同余和剩余类"
+created: 2026-09-30
+updated: 2026-09-30
+tags: [数论, 同余, 剩余类, 初等数论, 数学手册]
+related: [sources/10-数学手册原书第10版--7-54-初等数论--lpefv4, sources/10-数学手册原书第10版--7-537-环和域--3j0nhk, concepts/初等数论, concepts/同余, entities/剩余类环zn, entities/互素剩余类群zmx]
+sources: ["数学手册(原书第10版)/5.4.3 同余和剩余类.md"]
+authors: []
+url: ""
+venue: ""
+---
+
+# 数学手册(原书第10版) 5.4.3 同余和剩余类
+
+本节是 [[concepts/初等数论|初等数论]]（5.4）的第 3 小节，系统给出模算术的完整理论：同余关系及其计算法则、剩余类与剩余类环 ℤₘ、互素剩余类群 ℤₘˣ、本原剩余类（原根）、线性与联立线性同余式（含中国剩余定理）、二次同余式（含勒让德符号与二次互反律）、以及多项式同余的素数幂提升法。全部 9 个算例经人工复算通过；文本存在系统性转写讹误，疑点均以 query 悬置（见下文）。
+
+## 章节结构
+
+| 条目 | 主题 | 公式 |
+|---|---|---|
+| 1 | 同余（定义、等价关系） | 5.244a–c |
+| 2 | 计算法则 | 5.245a–d |
+| 3 | 剩余类、剩余类环 | 5.246–5.250 |
+| 4 | 互素的剩余类（ℤₘˣ，阶 φ(m)） | — |
+| 5 | 本原剩余类（原根存在定理） | — |
+| 6 | 线性同余式 | 5.251–5.252 |
+| 7 | 联立线性同余式（中国剩余定理） | 5.253–5.254 |
+| 8 | 二次同余式（二次剩余、勒让德符号、二次互反律） | 5.255–5.258 |
+| 9 | 多项式同余（素数幂提升法） | 5.259–5.260 |
+
+## 公式组（整理后原样保留）
+
+### 同余的等价关系（式 5.244）
+
+$$a \equiv a \pmod m,\quad \text{对每个 } a \in \mathbb{Z}; \tag{5.244a}$$
+$$a \equiv b \pmod m \Rightarrow b \equiv a \pmod m; \tag{5.244b}$$
+$$a \equiv b \pmod m \land b \equiv c \pmod m \Rightarrow a \equiv c \pmod m. \tag{5.244c}$$
+
+### 计算法则（式 5.245）
+
+$$a \equiv b \pmod m \land c \equiv d \pmod m \Rightarrow a+c \equiv b+d \pmod m; \tag{5.245a}$$
+$$a \equiv b \pmod m \land c \equiv d \pmod m \Rightarrow a\cdot c \equiv b\cdot d \pmod m; \tag{5.245b}$$
+$$a\,c \equiv b\,c \pmod m \land \gcd(c,m)=1 \Rightarrow a \equiv b \pmod m; \tag{5.245c}$$
+$$a\,c \equiv b\,c \pmod m \land c \neq 0 \Rightarrow a \equiv b \pmod{\tfrac{m}{\gcd(c,m)}}. \tag{5.245d}$$
+
+### 剩余类与剩余类环（式 5.246–5.250）
+
+$$[a]_m = \{x \mid x \in \mathbb{Z} \land x \equiv a \bmod m\}; \tag{5.246}$$
+$$[0]_m,\ [1]_m,\ \dots,\ [m-1]_m; \tag{5.247}$$
+$$[a]_m \oplus [b]_m = [a+b]_m,\qquad [a]_m \otimes [b]_m = [a\cdot b]_m; \tag{5.248–5.249}$$
+
+良定义性（5.250）：[a]ₘ = [a′]ₘ 与 [b]ₘ = [b′]ₘ 蕴涵 [a]ₘ ⊕ [b]ₘ = [a′]ₘ ⊕ [b′]ₘ 及 [a]ₘ ⊗ [b]ₘ = [a′]ₘ ⊗ [b′]ₘ。剩余类关于 ⊕、⊗ 形成有单位元的环；p 素数时 ℤ_p 是域。
+
+### 线性同余式（式 5.251–5.252）
+
+$$a\,x \equiv b \pmod m; \tag{5.251}$$
+$$x \equiv x^0 \pmod{m'},\qquad m' = m/\gcd(a,m); \tag{5.252a}$$
+$$x^0,\ x^0+m,\ x^0+2m,\ \dots,\ x^0+(\gcd(a,m)-1)\,m. \tag{5.252b}$$
+
+### 中国剩余定理（式 5.253–5.254）
+
+$$x \equiv b_1\ (m_1),\ x \equiv b_2\ (m_2),\ \dots,\ x \equiv b_t\ (m_t); \tag{5.253}$$
+$$m = m_1 m_2 \cdots m_t,\quad a_j = m/m_j; \tag{5.254a}$$
+$$a_j x_j \equiv b_j\ (m_j) \Rightarrow x' = a_1 x_1 + a_2 x_2 + \dots + a_t x_t \ \text{为解，且模 } m \text{ 唯一}. \tag{5.254b}$$
+
+### 二次同余（式 5.255–5.258）
+
+$$a x^2 + b x + c \equiv 0 \pmod m \Leftrightarrow (2ax+b)^2 \equiv b^2 - 4ac \pmod m; \tag{5.255}$$
+$$m = \prod_{i=1}^{\infty} p_i^{\alpha_i}; \tag{5.256}$$
+
+勒让德符号性质组（p、q 为奇素数）：
+
+$$\text{(E1)}\ a \equiv b \pmod p \Rightarrow \left(\tfrac{a}{p}\right) = \left(\tfrac{b}{p}\right); \tag{5.257a}$$
+$$\text{(E2)}\ \left(\tfrac{1}{p}\right) = 1; \tag{5.257b}$$
+$$\text{(E3)}\ \left(\tfrac{-1}{p}\right) = (-1)^{\frac{p-1}{2}}; \tag{5.257c}$$
+$$\text{(E4)}\ \left(\tfrac{ab}{p}\right) = \left(\tfrac{a}{p}\right)\left(\tfrac{b}{p}\right),\ \text{特别 } \left(\tfrac{ab^2}{p}\right) = \left(\tfrac{a}{p}\right); \tag{5.257d}$$
+$$\text{(E5)}\ \left(\tfrac{2}{p}\right) = (-1)^{\frac{p^2-1}{8}}; \tag{5.257e}$$
+$$\text{(E6)}\ \left(\tfrac{p}{q}\right)\left(\tfrac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}. \tag{5.257f}$$
+
+一般模二次同余（gcd(a, m) = 1）：
+
+$$x^2 \equiv a \pmod m,\quad m = 2^{\alpha} p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_t^{\alpha_t}; \tag{5.258a}$$
+$$a \equiv 1\ (4)\ (\alpha = 2),\quad a \equiv 1\ (8)\ (\alpha \geq 3),\quad \left(\tfrac{a}{p_1}\right) = \cdots = \left(\tfrac{a}{p_t}\right) = 1; \tag{5.258b}$$
+
+解数 = 2^t（α = 0 或 1）、2^{t+1}（α = 2）、2^{t+2}（α ≥ 3）。
+
+### 多项式同余（式 5.259–5.260）
+
+$$f(x) = a_n x^n + \dots + a_0 \equiv 0 \pmod{m_1 m_2 \cdots m_t} \Leftrightarrow f(x) \equiv 0\ (m_j)\ (j = 1, \dots, t); \tag{5.259}$$
+
+（m₁, …, m_t 两两互素；各组解数为 k_j 时总解数为 k₁k₂⋯k_t。）
+
+提升法（p ∤ f′(x₁) 时模 p 解 x₁ 唯一提升到模 p^α）：
+
+$$\frac{f(x_1)}{p} + f'(x_1)\, t_1 \equiv 0 \pmod p; \tag{5.260a}$$
+$$\frac{f(x_2)}{p^2} + f'(x_2)\, t_2 \equiv 0 \pmod p. \tag{5.260b}$$
+
+## 算例与复算状态
+
+| 算例 | 源文结果 | 复算 |
+|---|---|---|
+| 3 ≡ 13 ≡ 38 ≡ −2 (mod 5) | 等值链 | ✓（四数除以 5 余数均为 3） |
+| ([2]₅)² = [4]₅、([2]₅)³ = [3]₅、([2]₅)⁴ = [1]₅ | 模 5 本原剩余类 | ✓（2⁴ = 16 ≡ 1，阶 4 = φ(5)） |
+| 模 8：[1]₈ 阶 1；[3]₈、[5]₈、[7]₈ 阶 2（源文脱落「2」） | 模 8 无本原剩余类 | ✓（3² = 9 ≡ 1 等） |
+| φ(8) = φ(5) = 4 | 例 C | ✓ |
+| 114x ≡ 6 (mod 315)：gcd = 3，3 解 94, 199, 304（源文误连写「199304」） | 3 解 | ✓（94、199、304 均满足） |
+| 38x ≡ 2 (mod 105)：x ≡ 94 (mod 105) | 唯一解 | ✓（38·94 = 3572 ≡ 2） |
+| CRT 例 x ≡ 1(2), 2(3), 4(5) ⟹ x ≡ 29 (mod 30) | 唯一解 | ✓（15+20+24 = 59 ≡ 29） |
+| (65/307) = 1 | 互反律演算链 | ✓（逐符号核验） |
+| x⁴ + 7x + 4 ≡ 0 (mod 27) ⟹ x = 22（模 27 唯一） | 提升法 | ✓（f(22) = 234414 = 27·8682） |
+
+## 转写讹误与悬置疑点
+
+本节 OCR 文本存在系统性损坏：「千→于」讹误（关千／等千／对千／不等千／千是）、变量名与数字普遍脱落（m、a、b、x、k、p 与 2、5、8 等）、公式编号误置、页码与节号粘连。结构性疑点单列：
+
+1. 原根存在定理「m = 3」疑为「m = 2」——见 [[queries/原根存在定理m等于3是否应为m等于2]]。
+2. (5.255) 无条件使用 ⟺，反向推回需 gcd(2a, m) = 1——见 [[queries/式5-255是否缺gcd-2a-m条件]]。
+3. (5.260b) 段「模 p² 解 t₂′」疑应为「模 p 解」——见 [[queries/式5-260b模p2解应为模p解吗]]。
+4. 二次剩余示例「1,4, 是模 二次剩余」模数与列表脱落，无法复原——见 [[queries/二次剩余示例模数与列表脱落]]。
+5. 其余确定性讹误汇总于 [[queries/5-4-3全节系统性转写讹误清单]]。
+
+## 与现有 Wiki 的联系
+
+- [[entities/剩余类环zn]]：本节给出其数论侧完整构造（分拆、良定义性、模 p 域判据），与 5.3.7 的商环视角（[[findings/剩余类环运算与素数判据]]，式 5.174）交叉印证一致；该实体页已扩展更新。
+- [[concepts/素域]]、[[entities/伽罗瓦域gf-pn]]、[[comparisons/gf-pn与zp-n比较]]：ℤ_p 是素域，GF(p) ≅ ℤ_p。
+- [[concepts/环]]、[[concepts/理想]]、[[concepts/商环]]、[[concepts/主理想]]：ℤₘ ≅ ℤ/mℤ 是商环的典范实例（mℤ 为主理想）。
+- [[queries/5-4-1至5-4-6未入库依赖缺口]]：5.4.3 部分关闭。
+- [[queries/4-1-4与4-2-2与5-4-3与16-1-1未入库对群论节的依赖缺口]]：5.4.3 部分解决。
+
+## 依赖缺口
+
+本节引用而尚未入库的小节：5.4.2（丢番图方程，第 502/503 页）、5.4.4（欧拉函数，第 509 页）、5.2.4（等价关系，第 447 页）、5.3.3.1（阿贝尔群，第 451 页）。见 [[queries/5-4-3未入库依赖缺口]]。

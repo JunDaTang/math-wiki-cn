@@ -1,0 +1,49 @@
+---
+type: concept
+title: 柯西-施瓦茨不等式
+created: 2026-09-29
+updated: 2026-09-29
+tags: [数学手册, 代数, 不等式, 内积]
+related: [不等式, 三角不等式, 赫尔德不等式, 有限级数]
+sources: ["数学手册(原书第10版)/1.4 不等式.md"]
+---
+
+# 柯西-施瓦茨不等式
+
+柯西-施瓦茨不等式断言：两组数的对应乘积之和（内积型量）的绝对值不超过两组数的平方和的平方根之积。《数学手册(原书第10版)》1.4.2.9 给出实数、复数、无穷级数、积分四种形式（式 1.114–1.117），并附几何解释，是本节最重要的不等式族。
+
+## 实数形式（式 1.114a/b）
+
+对任意实数 $a_i,b_j\in\mathbb{R}$：
+
+$$\left|a_1b_1+a_2b_2+\dots+a_nb_n\right| \leqslant \sqrt{a_1^2+\cdots+a_n^2}\,\sqrt{b_1^2+\cdots+b_n^2} \tag{1.114a}$$
+
+（两侧平方得等价形式 1.114b。）当且仅当 $a_1:b_1=a_2:b_2=\cdots=a_n:b_n$ 时取等号。
+
+## 复数形式（式 1.115）
+
+利用 $|z|^2=z^*z$（$z^*$ 为 $z$ 的复共轭数），对任意 $z_i,w_j\in\mathbb{C}$：
+
+$$\left(\sum_{k=1}^{n}z_kw_k\right)^{*}\left(\sum_{k=1}^{n}z_kw_k\right) \leqslant \left(\sum_{k=1}^{n}z_k^{*}z_k\right)\left(\sum_{k=1}^{n}w_k^{*}w_k\right) \tag{1.115}$$
+
+## 级数形式与积分形式（式 1.116/1.117）
+
+对无穷收敛级数：
+
+$$\left(\sum_{n=1}^{\infty}a_nb_n\right)^2 \leqslant \left(\sum_{n=1}^{\infty}a_n^2\right)\left(\sum_{n=1}^{\infty}b_n^2\right) \tag{1.116}$$
+
+对“某些积分”：
+
+$$\left[\int_a^b f(x)\varphi(x)\,\mathrm{d}x\right]^2 \leqslant \left(\int_a^b [f(x)]^2\,\mathrm{d}x\right)\left(\int_a^b [\varphi(x)]^2\,\mathrm{d}x\right) \tag{1.117}$$
+
+## 几何解释（手册原文）
+
+若 $n=3$，把 $\{a_1,a_2,a_3\}$ 与 $\{b_1,b_2,b_3\}$ 视为笛卡儿坐标系中的向量，则柯西-施瓦茨不等式即指两向量内积的绝对值小于等于两向量绝对值之积；$n>3$ 时该表述可扩展到 n 维欧几里得空间的向量。
+
+## 备注
+
+- 等号条件（连比例式）仅由实数版（1.114）给出；复数、级数、积分版手册均未附等号条件。
+- 级数版要求级数收敛，见 [[concepts/有限级数]]。
+- 在 [[concepts/赫尔德不等式]] 中取共轭指数 $p=q=2$ 可得级数形式 1.116——此为标准推论，非手册本节明示。
+
+出处记录见 [[findings/柯西-施瓦茨不等式的四种形式]]。

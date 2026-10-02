@@ -1,0 +1,35 @@
+---
+type: concept
+title: "阻尼振荡"
+tags: [数学手册, 振动, 三角函数, 指数函数]
+related: [谐振荡, 正弦函数, 指数函数, 幂函数与指数函数的乘积, 拐点, 极值]
+created: 2026-09-29
+updated: 2026-09-29
+sources: ["数学手册(原书第10版)/2.7 三角函数(角函数).md"]
+---
+
+# 阻尼振荡
+
+阻尼振荡是振幅随时间按指数规律衰减的振荡，由
+
+$$u(t) = A\,\mathrm{e}^{-at}\sin(\omega t + \varphi_0)\quad(a, t > 0) \tag{2.139}$$
+
+描述（2.7.3.4）。曲线沿 t 轴振动并渐近趋近 t 轴，整个正弦曲线介于指数曲线 $u = \pm A\mathrm{e}^{-at}$ 之间，并与之相交于点列 $A_k$（横坐标 $\frac{(k+\frac{1}{2})\pi-\varphi_0}{\omega}$）。
+
+## 特征点体系
+
+- 起始点 $B = (0,\ A\sin\varphi_0)$；零点 $C_k = \left(\frac{k\pi-\varphi_0}{\omega},\ 0\right)$；
+- [[concepts/极值]]点 $D_k$：$t_k = \frac{k\pi-\varphi_0+\alpha}{\omega}$；
+- [[concepts/拐点]] $E_k$：$t_k = \frac{k\pi-\varphi_0+2\alpha}{\omega}$；
+- 其中 $\tan\alpha = \frac{\omega}{a}$（α 为极值相对包络交点的滞后角）；
+- 对数衰减率 $\delta = \ln\left|\frac{y_i}{y_{i+1}}\right| = a\frac{\pi}{\omega}$，其中 $y_i$、$y_{i+1}$ 为相继极值的纵坐标（即相继极值之比为 $\mathrm{e}^{-a\pi/\omega}$）。
+
+![](media/10-数学手册原书第10版--10-27-三角函数角函数--a2ypwy/013-f1758c90b170770177ca7968f4f416381f5e1edf100efedfb06d4739b60841ae.jpg)
+图 2.42：阻尼振荡曲线
+
+## 与指数函数的方法论联系
+
+阻尼振荡是「指数函数 × 三角函数」乘积的典型场景：包络 $\pm A\mathrm{e}^{-at}$ 由 [[concepts/指数函数]] 支配，包络—交点的分析方法与 [[concepts/幂函数与指数函数的乘积]]（式 2.62）一脉相承。
+
+- 证据（全部特征点公式经解析验证）：[[findings/阻尼振荡特征点体系与对数衰减率]]
+- 比较：[[comparisons/谐振荡与阻尼振荡比较]]
